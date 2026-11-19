@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Spacing tokens from Stitch: space-xs 4, sm 8, md 16, lg 24, xl 40; gutter 24. -->
+<resources>
+    <dimen name="space_xs">4dp</dimen>
+    <dimen name="space_sm">8dp</dimen>
+    <dimen name="space_md">16dp</dimen>
+    <dimen name="space_lg">24dp</dimen>
+    <dimen name="space_xl">40dp</dimen>
+    <dimen name="gutter">24dp</dimen>
+
+    <dimen name="card_radius">12dp</dimen>
+    <dimen name="field_radius">8dp</dimen>
+    <dimen name="min_touch">48dp</dimen>
+
+    <dimen name="text_label_sm">11sp</dimen>
+    <dimen name="text_label_md">12sp</dimen>
+    <dimen name="text_label_lg">14sp</dimen>
+    <dimen name="text_body_sm">12sp</dimen>
+    <dimen name="text_body_md">14sp</dimen>
+    <dimen name="text_body_lg">16sp</dimen>
+    <dimen name="text_headline_sm">20sp</dimen>
+    <dimen name="text_headline_md">24sp</dimen>
+    <dimen name="text_headline_lg">32sp</dimen>
+</resources>

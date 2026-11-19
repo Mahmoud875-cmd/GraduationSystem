@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="fa"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-container": "#4f46e5", "on-secondary": "#ffffff", "secondary-fixed": "#d9e3f6", "on-primary-fixed": "#0f0069", "on-tertiary-container": "#dadbdd", "inverse-primary": "#c3c0ff", "tertiary": "#46484a", "background": "#f9f9f9", "on-secondary-container": "#596373", "on-primary-container": "#dad7ff", "tertiary-fixed-dim": "#c5c6c8", "inverse-surface": "#2f3131", "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#3d4756", "surface-container": "#eeeeee", "on-error-container": "#93000a", "surface-dim": "#dadada", "on-tertiary-fixed-variant": "#444749", "secondary-container": "#d6e0f3", "tertiary-container": "#5e6062", "on-background": "#1a1c1c", "surface-bright": "#f9f9f9", "surface-tint": "#4d44e3", "on-error": "#ffffff", "primary-fixed-dim": "#c3c0ff", "error-container": "#ffdad6", "tertiary-fixed": "#e1e2e4", "primary": "#3525cd", "secondary": "#555f6f", "surface-container-low": "#f3f3f4", "on-secondary-fixed": "#121c2a", "outline-variant": "#c7c4d8", "on-primary": "#ffffff", "on-surface": "#1a1c1c", "surface-container-high": "#e8e8e8", "error": "#ba1a1a", "on-tertiary": "#ffffff", "on-primary-fixed-variant": "#3323cc", "inverse-on-surface": "#f0f1f1", "on-surface-variant": "#464555", "secondary-fixed-dim": "#bdc7d9", "surface-variant": "#e2e2e2", "surface": "#f9f9f9", "on-tertiary-fixed": "#191c1e", "primary-fixed": "#e2dfff", "surface-container-highest": "#e2e2e2", "outline": "#777587" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "margin": "2rem", "space-md": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "gutter": "1.5rem" }, "fontFamily": { "headline-lg": ["Vazirmatn"], "label-sm": ["Vazirmatn"], "body-sm": ["Vazirmatn"], "body-md": ["Vazirmatn"], "headline-md": ["Vazirmatn"], "body-lg": ["Vazirmatn"], "label-md": ["Vazirmatn"], "headline-sm": ["Vazirmatn"], "label-lg": ["Vazirmatn"] }, "fontSize": { "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "500" }] } } } }</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body flex flex-col min-h-screen text-on-surface"><header class="fixed top-0 inset-x-0 z-50 bg-surface/80 backdrop-blur-xl pt-safe"><div class="h-16 px-gutter flex items-center justify-between"><span class="text-headline-sm font-headline font-bold text-on-surface">Projects Reports</span><div class="flex items-center gap-space-sm"><button class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full px-gutter pt-16 pb-24 bg-surface"><div class="flex flex-col w-full gap-space-lg">
+<!-- Top Action & Filter Row -->
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex gap-space-sm overflow-x-auto pb-space-xs">
+<button class="px-space-md py-space-sm rounded-full bg-primary-container text-on-primary-container text-label-lg whitespace-nowrap shadow-sm">همه گزارش‌ها (۴)</button>
+<button class="px-space-md py-space-sm rounded-full bg-surface-container text-on-surface-variant text-label-lg whitespace-nowrap">تایید شده</button>
+<button class="px-space-md py-space-sm rounded-full bg-surface-container text-on-surface-variant text-label-lg whitespace-nowrap">در انتظار نظر</button>
+</div>
+</div>
+<!-- Reports List Container -->
+<div class="flex flex-col gap-space-md">
+<!-- Report Card 1 -->
+<div class="flex flex-col bg-surface-container-low rounded-xl p-space-lg shadow-sm gap-space-md transition-all hover:shadow-md">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex px-space-sm py-0.5 rounded text-label-sm bg-primary-fixed text-on-primary-fixed font-bold">مرتبط با وظیفه</span>
+<span class="text-body-sm text-on-surface-variant">تاریخ ارسال: ۱۴۰۲/۰۹/۲۰</span>
+</div>
+<h3 class="text-headline-sm text-on-surface">گزارش فاز اول: طراحی معماری پایگاه داده ابری</h3>
+<p class="text-body-md text-on-surface-variant">تحلیل ساختار کلاد و نیازمندی‌های ذخیره‌سازی داده‌های ساختاریافته تیم با استفاده از سرویس‌های ابری نوین.</p>
+</div>
+</div>
+<!-- File Download -->
+<div class="flex items-center justify-between bg-surface-container-lowest p-space-md rounded-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined">description</span>
+</div>
+<div class="flex flex-col">
+<span class="text-body-md font-bold text-on-surface">Database_Architecture_v1.pdf</span>
+<span class="text-body-sm text-on-surface-variant">نسخه نهایی • ۴.۲ مگابایت</span>
+</div>
+</div>
+<a class="flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container hover:bg-surface-container-high rounded-lg text-primary text-label-lg font-bold transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>دانلود</span>
+</a>
+</div>
+<!-- Professor's Note Box -->
+<div class="flex flex-col bg-surface-container p-space-md rounded-lg gap-space-sm">
+<div class="flex items-center gap-space-xs text-primary font-bold text-label-lg">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">comment</span>
+<span>نظر استاد راهنما</span>
+</div>
+<p class="text-body-md text-on-surface">ساختار کلی بسیار عالی و دقیق طراحی شده است. لطفاً بخش مقایسه هزینه سرورها را با جزئیات بیشتری در گزارش بعدی لحاظ کنید.</p>
+</div>
+<!-- Advisor Inline Comment Input -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex gap-space-sm">
+<input class="flex-1 bg-surface-container-lowest text-on-surface px-space-md py-space-sm rounded-lg text-body-md outline-none focus:ring-2 focus:ring-primary-container transition-all" placeholder="نظر خود را بنویسید..." type="text"/>
+<button class="px-space-lg py-space-sm bg-primary-container text-on-primary-container text-label-lg font-bold rounded-lg hover:opacity-90 transition-opacity" onclick="showToast(this)">ذخیره</button>
+</div>
+</div>
+</div>
+<!-- Report Card 2 -->
+<div class="flex flex-col bg-surface-container-low rounded-xl p-space-lg shadow-sm gap-space-md transition-all hover:shadow-md">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex px-space-sm py-0.5 rounded text-label-sm bg-surface-container-high text-on-surface-variant font-bold">گزارش عمومی پروژه</span>
+<span class="text-body-sm text-on-surface-variant">تاریخ ارسال: ۱۴۰۲/۰۹/۱۵</span>
+</div>
+<h3 class="text-headline-sm text-on-surface">گزارش هفتگی پیشرفت کلی تیم</h3>
+<p class="text-body-md text-on-surface-variant">بررسی روند پیشبرد تسک‌های هفتگی، هماهنگی جلسات اسکرام و وضعیت کلی پروژه نسبت به زمان‌بندی تعیین شده.</p>
+</div>
+</div>
+<!-- File Download -->
+<div class="flex items-center justify-between bg-surface-container-lowest p-space-md rounded-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined">description</span>
+</div>
+<div class="flex flex-col">
+<span class="text-body-md font-bold text-on-surface">Weekly_Progress_W12.docx</span>
+<span class="text-body-sm text-on-surface-variant">نسخه اول • ۱.۸ مگابایت</span>
+</div>
+</div>
+<a class="flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container hover:bg-surface-container-high rounded-lg text-primary text-label-lg font-bold transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>دانلود</span>
+</a>
+</div>
+<!-- Professor's Note Box (Empty State) -->
+<div class="flex items-center gap-space-sm bg-surface-container p-space-md rounded-lg text-on-surface-variant text-body-md">
+<span class="material-symbols-outlined text-[20px]">hourglass_empty</span>
+<span>هنوز نظری ثبت نشده است.</span>
+</div>
+<!-- Advisor Inline Comment Input -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex gap-space-sm">
+<input class="flex-1 bg-surface-container-lowest text-on-surface px-space-md py-space-sm rounded-lg text-body-md outline-none focus:ring-2 focus:ring-primary-container transition-all" placeholder="نظر خود را بنویسید..." type="text"/>
+<button class="px-space-lg py-space-sm bg-primary-container text-on-primary-container text-label-lg font-bold rounded-lg hover:opacity-90 transition-opacity" onclick="showToast(this)">ذخیره</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Floating / Bottom Action for Student -->
+<div class="sticky bottom-24 z-40 flex justify-center pt-space-md">
+<button class="flex items-center gap-space-sm px-space-xl py-space-md bg-primary text-on-primary rounded-full shadow-lg text-label-lg font-bold hover:scale-105 active:scale-95 transition-all" onclick="openUploadModal()">
+<span class="material-symbols-outlined">add_circle</span>
+<span>بارگذاری گزارش جدید</span>
+</button>
+</div>
+<!-- Upload Modal (Hidden by default) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden items-center justify-center p-gutter" id="uploadModal">
+<div class="flex flex-col bg-surface-container-lowest w-full max-w-lg rounded-2xl p-space-lg shadow-xl gap-space-md relative animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-center justify-between">
+<h3 class="text-headline-sm text-on-surface">بارگذاری گزارش جدید</h3>
+<button class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="closeUploadModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm">
+<label class="text-label-md text-on-surface-variant">نوع گزارش</label>
+<select class="bg-surface-container text-on-surface p-space-md rounded-lg text-body-md outline-none">
+<option>مرتبط با وظیفه مشخص</option>
+<option>گزارش عمومی پروژه</option>
+</select>
+</div>
+<div class="flex flex-col gap-space-sm">
+<label class="text-label-md text-on-surface-variant">عنوان گزارش</label>
+<input class="bg-surface-container text-on-surface px-space-md py-space-sm rounded-lg text-body-md outline-none" placeholder="مثلاً گزارش پیشرفت ماژول هوش مصنوعی" type="text"/>
+</div>
+<div class="flex flex-col gap-space-sm">
+<label class="text-label-md text-on-surface-variant">فایل گزارش (PDF یا Word)</label>
+<div class="flex flex-col items-center justify-center border-2 border-dashed border-outline-variant p-space-xl rounded-xl bg-surface-container-low gap-space-sm text-center">
+<span class="material-symbols-outlined text-[36px] text-primary">cloud_upload</span>
+<span class="text-body-md text-on-surface font-bold">فایل خود را اینجا رها کنید یا کلیک کنید</span>
+<span class="text-body-sm text-on-surface-variant">حداکثر حجم فایل: ۲۰ مگابایت</span>
+</div>
+</div>
+<div class="flex gap-space-sm pt-space-sm">
+<button class="flex-1 py-space-md bg-surface-container text-on-surface rounded-lg text-label-lg font-bold" onclick="closeUploadModal()">انصراف</button>
+<button class="flex-1 py-space-md bg-primary-container text-on-primary-container rounded-lg text-label-lg font-bold" onclick="submitReport(event)">بارگذاری نهایی</button>
+</div>
+</div>
+</div>
+<!-- Toast Notification -->
+<div class="fixed top-20 left-1/2 -translate-x-1/2 z-50 bg-inverse-surface text-inverse-on-surface px-space-lg py-space-md rounded-full shadow-lg text-label-lg opacity-0 pointer-events-none transition-opacity duration-300" id="toast">
+    نظر با موفقیت ذخیره شد!
+  </div>
+<script>
+    function openUploadModal() {
+      const modal = document.getElementById('uploadModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeUploadModal() {
+      const modal = document.getElementById('uploadModal');
+      modal.classList.remove('flex');
+      modal.classList.add('hidden');
+    }
+
+    function submitReport(e) {
+      e.preventDefault();
+      closeUploadModal();
+      showToast();
+    }
+
+    function showToast(btn) {
+      if(btn) {
+        const input = btn.previousElementSibling;
+        if(input && input.value) {
+          input.value = '';
+        }
+      }
+      const toast = document.getElementById('toast');
+      toast.classList.remove('opacity-0');
+      toast.classList.add('opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0');
+      }, 2500);
+    }
+  </script>
+</div></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]" data-active-classes="bg-primary-container text-on-primary-container font-bold"><div class="flex justify-around items-center h-20 px-space-md"><a class="flex flex-col items-center justify-center gap-space-xs w-16 h-16 text-on-surface-variant hover:text-on-surface transition-all rounded-xl" data-path="dashboard" href="#"><span class="material-symbols-outlined">dashboard</span><span class="text-label-sm">داشبورد</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-space-xs w-16 h-16 transition-all rounded-xl bg-primary-container text-on-primary-container font-bold" data-path="projects-reports" href="#"><span class="material-symbols-outlined">description</span><span class="text-label-sm">گزارش‌ها</span></a><a class="flex flex-col items-center justify-center gap-space-xs w-16 h-16 text-on-surface-variant hover:text-on-surface transition-all rounded-xl" data-path="evaluations" href="#"><span class="material-symbols-outlined">grade</span><span class="text-label-sm">ارزیابی‌ها</span></a><a class="flex flex-col items-center justify-center gap-space-xs w-16 h-16 text-on-surface-variant hover:text-on-surface transition-all rounded-xl" data-path="profile" href="#"><span class="material-symbols-outlined">person</span><span class="text-label-sm">پروفایل</span></a></div></nav></body></html>

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/gutter"
+            android:paddingTop="@dimen/space_lg"
+            android:paddingBottom="@dimen/space_xl">
+
+            <!-- Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/vazirmatn_bold"
+                    android:text="@string/prof_panel_title"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/text_headline_sm" />
+
+                <ImageView
+                    android:id="@+id/btnLogout"
+                    android:layout_width="@dimen/min_touch"
+                    android:layout_height="@dimen/min_touch"
+                    android:contentDescription="@string/logout"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_logout"
+                    app:tint="@color/on_surface_variant" />
+            </LinearLayout>
+
+            <!-- Greeting banner -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_lg"
+                android:background="@drawable/bg_input"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/space_lg">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/welcomeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/space_sm"
+                            android:fontFamily="@font/vazirmatn_medium"
+                            android:text="@string/app_name"
+                            android:textColor="@color/on_surface"
+                            android:textSize="@dimen/text_headline_sm" />
+
+                        <TextView
+                            style="@style/ChipText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/chip_primary_fixed"
+                            android:text="@string/prof_supervisor_badge"
+                            android:textColor="@color/on_primary_container" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/greetingSubtext"
+                        style="@style/Text.BodyMuted"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_xs"
+                        android:textSize="@dimen/text_body_sm" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="@dimen/space_md"
+                    android:background="@drawable/bg_circle_secondary_container"
+                    android:contentDescription="@string/prof_panel_title"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_waving_hand"
+                    app:tint="@color/on_secondary_container" />
+            </LinearLayout>
+
+            <!-- Action alert card (purple) -->
+            <LinearLayout
+                android:id="@+id/pendingCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_lg"
+                android:background="@drawable/bg_card_primary_container"
+                android:elevation="3dp"
+                android:orientation="vertical"
+                android:padding="@dimen/space_lg">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="@dimen/space_md"
+                        android:background="@drawable/bg_icon_white_translucent"
+                        android:contentDescription="@string/prof_pending_banner_title"
+                        android:padding="9dp"
+                        android:src="@drawable/ic_notifications_active"
+                        app:tint="@color/on_primary_container" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vazirmatn_medium"
+                            android:text="@string/prof_pending_banner_title"
+                            android:textColor="@color/on_primary_container"
+                            android:textSize="@dimen/text_headline_sm" />
+
+                        <TextView
+                            android:id="@+id/pendingBody"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/space_xs"
+                            android:fontFamily="@font/vazirmatn_regular"
+                            android:textColor="@color/on_primary_container"
+                            android:textSize="@dimen/text_body_md" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnReview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_md"
+                    android:background="@drawable/bg_button_white"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:minHeight="48dp"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/space_md">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vazirmatn_medium"
+                        android:text="@string/review_topics"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/text_label_lg" />
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginStart="@dimen/space_sm"
+                        android:contentDescription="@string/review_topics"
+                        android:src="@drawable/ic_arrow_forward"
+                        app:tint="@color/primary" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Quick stats grid -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_lg"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/space_sm"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_input"
+                    android:orientation="vertical"
+                    android:padding="@dimen/space_md">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/vazirmatn_medium"
+                            android:text="@string/prof_total_projects"
+                            android:textColor="@color/on_surface_variant"
+                            android:textSize="@dimen/text_label_sm" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:contentDescription="@string/prof_total_projects"
+                            android:src="@drawable/ic_folder_open"
+                            app:tint="@color/primary" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/statProjectsCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_xs"
+                        android:fontFamily="@font/vazirmatn_bold"
+                        android:textColor="@color/on_surface"
+                        android:textSize="@dimen/text_headline_md" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_sm"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_input"
+                    android:orientation="vertical"
+                    android:padding="@dimen/space_md">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/vazirmatn_medium"
+                            android:text="@string/prof_defense_sessions"
+                            android:textColor="@color/on_surface_variant"
+                            android:textSize="@dimen/text_label_sm" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:contentDescription="@string/prof_defense_sessions"
+                            android:src="@drawable/ic_event_available"
+                            app:tint="@color/primary" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/statPendingCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_xs"
+                        android:fontFamily="@font/vazirmatn_bold"
+                        android:textColor="@color/on_surface"
+                        android:textSize="@dimen/text_headline_md" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Section header: approved projects + view all -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_xl"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Text.HeadlineSm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/prof_confirmed_projects" />
+
+                <LinearLayout
+                    android:id="@+id/btnViewAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/space_xs">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vazirmatn_medium"
+                        android:text="@string/view_all"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/text_label_md" />
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:contentDescription="@string/view_all"
+                        android:src="@drawable/ic_chevron_left"
+                        app:tint="@color/primary" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/noProjectsText"
+                style="@style/Text.BodyMuted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_sm"
+                android:text="@string/no_active_projects"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/projectsRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_sm"
+                android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

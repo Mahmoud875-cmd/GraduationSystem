@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Soft input field background (surface-container-low, 8dp radius). -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/surface_container_low" />
+    <corners android:radius="8dp" />
+</shape>

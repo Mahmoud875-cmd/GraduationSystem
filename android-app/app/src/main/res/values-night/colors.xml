@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dark-mode overrides for the Stitch design tokens. Only surfaces / on-colors /
+     status tints change; brand colors (primary/secondary/tertiary) stay as-is. -->
+<resources>
+    <!-- Primary (lighter container + dark ink so primary_container buttons stay readable) -->
+    <color name="primary">#C3C0FF</color>
+    <color name="on_primary">#2514A6</color>
+    <color name="primary_container">#4F46E5</color>
+    <color name="on_primary_container">#E2DFFF</color>
+    <color name="primary_fixed">#4F46E5</color>
+    <color name="primary_fixed_dim">#3323CC</color>
+    <color name="on_primary_fixed">#E2DFFF</color>
+    <color name="on_primary_fixed_variant">#C3C0FF</color>
+
+    <!-- Secondary -->
+    <color name="secondary">#BDC7D9</color>
+    <color name="on_secondary">#2B3341</color>
+    <color name="secondary_container">#3D4756</color>
+    <color name="on_secondary_container">#D9E3F6</color>
+    <color name="secondary_fixed">#3D4756</color>
+    <color name="secondary_fixed_dim">#556070</color>
+    <color name="on_secondary_fixed">#D9E3F6</color>
+    <color name="on_secondary_fixed_variant">#BDC7D9</color>
+
+    <!-- Tertiary -->
+    <color name="tertiary">#C5C6C8</color>
+    <color name="on_tertiary">#333537</color>
+    <color name="tertiary_container">#48494B</color>
+    <color name="on_tertiary_container">#E1E2E4</color>
+    <color name="tertiary_fixed">#48494B</color>
+
+    <!-- Error -->
+    <color name="error">#FFB4AB</color>
+    <color name="on_error">#690005</color>
+    <color name="error_container">#93000A</color>
+    <color name="on_error_container">#FFDAD6</color>
+
+    <!-- Background / Surface (dark tonal ramp) -->
+    <color name="background">#101311</color>
+    <color name="on_background">#E3E2E1</color>
+    <color name="surface">#101311</color>
+    <color name="on_surface">#E3E2E1</color>
+    <color name="surface_variant">#31303A</color>
+    <color name="on_surface_variant">#C7C4D8</color>
+    <color name="surface_container_lowest">#0B0C0E</color>
+    <color name="surface_container_low">#191B1E</color>
+    <color name="surface_container">#1D1F22</color>
+    <color name="surface_container_high">#272A2D</color>
+    <color name="surface_container_highest">#32353A</color>
+    <color name="surface_bright">#36393C</color>
+    <color name="surface_dim">#101311</color>
+    <color name="surface_tint">#C3C0FF</color>
+
+    <!-- Outline -->
+    <color name="outline">#918F9E</color>
+    <color name="outline_variant">#47464F</color>
+
+    <!-- Inverse -->
+    <color name="inverse_surface">#E3E2E1</color>
+    <color name="inverse_on_surface">#2F3131</color>
+
+    <!-- Status chips: translucent pills with light text for dark backgrounds.
+         fg colors MUST stay light (they sit on the dark *_bg pills) or chip text
+         becomes unreadable in night mode. -->
+    <color name="status_pending_bg">#3A2E10</color>
+    <color name="status_pending_fg">#FCD34D</color>
+    <color name="status_approved_bg">#0F2E1E</color>
+    <color name="status_approved_fg">#6EE7B7</color>
+    <color name="status_in_progress_bg">#132340</color>
+    <color name="status_in_progress_fg">#93C5FD</color>
+    <color name="status_rejected_bg">#3A1414</color>
+    <color name="status_rejected_fg">#FCA5A5</color>
+
+    <!-- Evaluation / accent tints (darker fills, lighter ink) -->
+    <color name="emerald_50">#0F2E1E</color>
+    <color name="emerald_100">#0F3D28</color>
+    <color name="emerald_600">#34D399</color>
+    <color name="emerald_800">#6EE7B7</color>
+    <color name="emerald_900">#A7F3D0</color>
+    <color name="emerald_950">#D1FAE5</color>
+    <color name="amber_100">#3A2E10</color>
+    <color name="amber_800">#FCD34D</color>
+
+    <!-- Popup menu / dropdown surfaces -->
+    <color name="surface_white">#1D1F22</color>
+    <color name="on_surface_inverse">#2F3131</color>
+
+    <!-- Modern redesign accent tints used inside cards/chips.
+         These *_fg / mid-tone tokens are used as TEXT colors over dark fills in night
+         mode, so they must resolve to light values (light-mode dark inks fail here). -->
+    <color name="indigo_400">#A5B4FC</color>
+    <color name="indigo_50">#14162E</color>
+    <color name="indigo_100">#1B1E40</color>
+    <color name="indigo_200">#2A2E5E</color>
+    <color name="indigo_600">#818CF8</color>
+    <color name="indigo_700">#A5B4FC</color>
+    <color name="indigo_800">#C7D2FE</color>
+    <color name="emerald_200">#0F3D28</color>
+    <color name="emerald_300">#6EE7B7</color>
+    <color name="emerald_400">#6EE7B7</color>
+    <color name="emerald_500">#34D399</color>
+    <color name="emerald_700">#6EE7B7</color>
+    <color name="amber_50">#2E2410</color>
+    <color name="amber_200">#3A2E10</color>
+    <color name="amber_300">#FCD34D</color>
+    <color name="amber_500">#FBBF24</color>
+    <color name="amber_600">#FCD34D</color>
+    <color name="amber_700">#FCD34D</color>
+    <color name="red_100">#3A1414</color>
+    <color name="red_600">#F87171</color>
+    <color name="blue_100">#132340</color>
+    <color name="blue_600">#93C5FD</color>
+
+    <!-- Selected filter-chip count badge stays a mid indigo (white ink reads on it). -->
+    <color name="chip_count_selected">#4F46E5</color>
+</resources>

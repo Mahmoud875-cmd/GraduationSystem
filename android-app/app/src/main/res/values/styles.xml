@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Reusable text appearances mapped to Stitch typography scale. -->
+    <style name="Text" parent="">
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:fontFamily">@font/vazirmatn_regular</item>
+    </style>
+
+    <style name="Text.HeadlineMd" parent="Text">
+        <item name="android:textSize">@dimen/text_headline_md</item>
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:fontFamily">@font/vazirmatn_bold</item>
+    </style>
+
+    <style name="Text.HeadlineSm" parent="Text">
+        <item name="android:textSize">@dimen/text_headline_sm</item>
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:fontFamily">@font/vazirmatn_semibold</item>
+    </style>
+
+    <style name="Text.BodyMd" parent="Text">
+        <item name="android:textSize">@dimen/text_body_md</item>
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:fontFamily">@font/vazirmatn_regular</item>
+    </style>
+
+    <style name="Text.BodyMuted" parent="Text.BodyMd">
+        <item name="android:textColor">@color/on_surface_variant</item>
+    </style>
+
+    <style name="Text.BodyLg" parent="Text">
+        <item name="android:textSize">@dimen/text_body_lg</item>
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:fontFamily">@font/vazirmatn_regular</item>
+    </style>
+
+    <style name="Text.BodySm" parent="Text">
+        <item name="android:textSize">@dimen/text_body_sm</item>
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:fontFamily">@font/vazirmatn_regular</item>
+    </style>
+
+    <style name="Text.LabelMd">
+        <item name="android:textSize">@dimen/text_label_md</item>
+        <item name="android:textColor">@color/on_surface_variant</item>
+        <item name="android:fontFamily">@font/vazirmatn_medium</item>
+    </style>
+
+    <style name="Text.LabelSm">
+        <item name="android:textSize">@dimen/text_label_sm</item>
+        <item name="android:textColor">@color/on_surface_variant</item>
+        <item name="android:fontFamily">@font/vazirmatn_medium</item>
+    </style>
+
+    <style name="Text.LabelLg">
+        <item name="android:textSize">@dimen/text_label_lg</item>
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:fontFamily">@font/vazirmatn_medium</item>
+    </style>
+
+    <!-- Status chip text (small bold). -->
+    <style name="ChipText">
+        <item name="android:textSize">@dimen/text_label_sm</item>
+        <item name="android:fontFamily">@font/vazirmatn_bold</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <!-- Filled primary button using indigo container token. -->
+    <style name="Widget.App.Button.Primary" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/primary_container</item>
+        <item name="android:textColor">@color/on_primary</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:minHeight">@dimen/min_touch</item>
+        <item name="android:textSize">@dimen/text_label_lg</item>
+        <item name="android:fontFamily">@font/vazirmatn_medium</item>
+    </style>
+
+    <!-- Secondary (surface) button. -->
+    <style name="Widget.App.Button.Secondary" parent="Widget.Material3.Button.UnelevatedButton">
+        <item name="backgroundTint">@color/secondary_container</item>
+        <item name="android:textColor">@color/on_secondary_container</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:minHeight">@dimen/min_touch</item>
+        <item name="android:textSize">@dimen/text_label_md</item>
+        <item name="android:fontFamily">@font/vazirmatn_medium</item>
+        <item name="elevation">0dp</item>
+    </style>
+    
+    <!-- Card container style. -->
+    <style name="Widget.App.Card" parent="">
+        <item name="android:background">@drawable/bg_card</item>
+        <item name="android:padding">@dimen/space_lg</item>
+        <item name="android:elevation">2dp</item>
+    </style>
+</resources>

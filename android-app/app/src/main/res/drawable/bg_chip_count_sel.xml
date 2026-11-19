@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Small count badge inside selected filter chip: translucent white pill. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/chip_count_selected" />
+    <corners android:radius="999dp" />
+</shape>

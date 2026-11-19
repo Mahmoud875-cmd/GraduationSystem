@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Project System</string>
+    <string name="app_subtitle">Manage graduation projects and theses</string>
+
+    <!-- Common -->
+    <string name="back">Back</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="loading">Loading…</string>
+    <string name="retry">Try again</string>
+    <string name="logout">Log out</string>
+    <string name="network_error">Server connection error. Please check the address and connection.</string>
+    <string name="generic_error">Something unexpected happened.</string>
+
+    <!-- Auth: login -->
+    <string name="login_title">Sign in to the system</string>
+    <string name="label_email">University email</string>
+    <string name="label_password">Password</string>
+    <string name="hint_email">name@university.edu</string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="login_action">Login</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="register_link">Register</string>
+
+    <!-- Auth: register -->
+    <string name="register_title">Register in the system</string>
+    <string name="register_subtitle">Please enter your information to create an account.</string>
+    <string name="label_fullname">Full name</string>
+    <string name="hint_fullname">e.g. Ali Rezaei</string>
+    <string name="label_account_type">Account type</string>
+    <string name="choose_option">Select…</string>
+    <string name="role_student">Student</string>
+    <string name="role_professor">Supervisor</string>
+    <string name="label_confirm_password">Confirm password</string>
+    <string name="have_account">Already registered?</string>
+
+    <!-- Student dashboard -->
+    <string name="welcome_prefix">Welcome,</string>
+    <string name="stat_project_progress">Overall project progress</string>
+    <string name="stat_team_status">Team status</string>
+    <string name="active_members_fmt">%1$d active members</string>
+    <string name="undergraduate_project">Undergraduate Project</string>
+    <string name="current_phase_progress">Current phase progress</string>
+    <string name="view_tasks">View tasks</string>
+    <string name="view_reports">Reports &amp; files</string>
+    <string name="your_team">Your team</string>
+    <string name="final_evaluation">Final evaluation</string>
+    <string name="supervisor_comment_fmt">Supervisor comment (%1$s):</string>
+    <string name="empty_no_team_title">You are not in any team yet</string>
+    <string name="empty_no_team_body">To start working on projects, you must first create a new team.</string>
+    <string name="create_new_team">Create new team</string>
+    <string name="empty_no_project_title">Your team has no project topic</string>
+    <string name="empty_no_project_body">You can now register your proposed project topic.</string>
+    <string name="register_project_topic">Register project topic</string>
+
+    <!-- Create team -->
+    <string name="create_team_title">Create team</string>
+    <string name="label_team_name">Team name</string>
+    <string name="hint_team_name">e.g. Team Alpha</string>
+    <string name="label_member_emails">Member emails</string>
+    <string name="label_member_emails_optional">Member emails (optional)</string>
+    <string name="team_ready_title">Ready for takeoff?</string>
+    <string name="team_ready_body">After creating the team, you can edit details and add documents from the dashboard.</string>
+    <string name="back_to_dashboard">Back to dashboard</string>
+    <string name="hint_member_emails">Separate emails with a comma</string>
+    <string name="members_help">Only registered student users can be added.</string>
+
+    <!-- Register project -->
+    <string name="register_project_title">Register project topic</string>
+    <string name="label_project_title">Project title</string>
+    <string name="hint_project_title">Enter your project title</string>
+    <string name="label_description">Description</string>
+    <string name="hint_description">A brief description of the project</string>
+    <string name="label_supervisor">Supervisor</string>
+    <string name="choose_supervisor">Select a supervisor…</string>
+    <string name="regproj_step_label">First step: define and approve the proposal</string>
+    <string name="regproj_subtitle">To start the thesis process, register your proposed title, idea description, and preferred supervisor.</string>
+    <string name="regproj_progress_title">Step 1 of 3: complete basic information</string>
+    <string name="regproj_progress_percent">35% complete</string>
+    <string name="req_mark">*</string>
+    <string name="hint_project_title_long">e.g. Smart health monitoring system using computer vision</string>
+    <string name="title_hint">The title should be clear, specific, and preferably free of generic words.</string>
+    <string name="label_description_short">Brief project description</string>
+    <string name="desc_hint">Describe the overall goals, technologies used, core problem, and expected outcomes in a few paragraphs...</string>
+    <string name="desc_min_hint">At least 100 characters are required for initial review.</string>
+    <string name="char_counter_fmt">%1$s / 500 characters</string>
+    <string name="label_supervisor_requested">Requested supervisor</string>
+    <string name="supervisor_hint">After selection, your academic record is sent to check capacity.</string>
+    <string name="followup_title">Follow-up &amp; approval flow</string>
+    <string name="followup_body">Note: after submission, your request is sent to the selected supervisor and its status appears on the dashboard as \"Pending approval\".</string>
+    <string name="checklist_title">Tips for faster proposal approval</string>
+    <string name="checklist_item1">• Prior verbal coordination with the professor is an advantage.</string>
+    <string name="checklist_item2">• No more than 40% overlap with university projects from the last 3 years.</string>
+    <string name="submit_topic">Submit topic</string>
+    <string name="cancel_and_return">Cancel and go back</string>
+        <string name="chars_unit">characters</string>
+
+    <!-- Professor dashboard -->
+    <string name="pending_topics_count">Topics pending review</string>
+    <string name="review_topics">Review topics</string>
+    <string name="my_projects">My projects</string>
+    <string name="no_active_projects">You have no approved projects yet.</string>
+        <string name="prof_panel_title">Supervisor Panel</string>
+        <string name="prof_supervisor_badge">Supervisor</string>
+        <string name="prof_pending_banner_title">Review new topics</string>
+        <string name="prof_pending_banner_body_fmt">You have %1$s topics pending review submitted by students.</string>
+        <string name="prof_total_projects">Total active projects</string>
+        <string name="prof_defense_sessions">Upcoming defense sessions</string>
+        <string name="prof_confirmed_projects">Approved projects</string>
+        <string name="view_all">View all</string>
+        <string name="overall_progress">Overall progress</string>
+        <string name="tasks_title">Tasks</string>
+        <string name="reports_title">Reports</string>
+        <string name="evaluation_short">Evaluate</string>
+
+    <!-- Review topics -->
+    <string name="review_topics_title">Review topics</string>
+    <string name="approve">Approve</string>
+    <string name="reject">Reject</string>
+    <string name="label_start_date">Start date</string>
+    <string name="label_end_date">End date</string>
+    <string name="team_members_label">Team members</string>
+
+    <!-- Tasks -->
+    <string name="project_tasks_title">Project tasks</string>
+    <string name="add_task">Add task</string>
+    <string name="label_deadline">Deadline</string>
+    <string name="label_assignee">Assignee</string>
+    <string name="no_tasks">No tasks have been defined yet.</string>
+
+    <!-- Add task screen -->
+    <string name="add_task_new_title">Add New Task</string>
+    <string name="required">*</string>
+    <string name="task_created">Task created successfully</string>
+    <string name="label_task_title">Task title</string>
+    <string name="hint_task_title">e.g. Design the cloud database</string>
+    <string name="label_task_desc">Task description</string>
+    <string name="hint_task_desc">Describe details, requirements and expected outputs...</string>
+    <string name="label_task_deadline">Deadline</string>
+    <string name="label_task_assignee">Assign to</string>
+    <string name="notify_student_title">Automatic student notification</string>
+    <string name="notify_student_body">After saving and assigning the task, the student will be automatically notified via the notifications system and the project progress will be updated.</string>
+    <string name="label_priority">Task priority</string>
+    <string name="priority_urgent">Urgent &amp; critical</string>
+    <string name="priority_normal">Normal</string>
+    <string name="priority_low">Low priority</string>
+    <string name="cancel_and_back">Cancel and go back</string>
+
+    <!-- Task status labels -->
+    <string name="status_pending">Pending</string>
+    <string name="status_approved">Approved</string>
+    <string name="status_rejected">Rejected</string>
+    <string name="status_in_progress">In progress</string>
+    <string name="status_submitted">Submitted</string>
+    <string name="status_evaluated">Evaluated</string>
+    <string name="task_todo">Not started</string>
+    <string name="task_done">Done</string>
+    <string name="task_late">Overdue</string>
+
+    <!-- Reports -->
+    <string name="project_reports_title">Project reports</string>
+    <string name="upload_report">Upload report</string>
+    <string name="download">Download</string>
+    <string name="write_feedback">Add feedback</string>
+    <string name="feedback_hint">Supervisor feedback text…</string>
+    <string name="no_reports">No reports have been uploaded yet.</string>
+
+    <!-- Reports list screen -->
+    <string name="filter_all_reports_fmt">All reports (%1$s)</string>
+    <string name="filter_approved">Approved</string>
+    <string name="filter_pending_review">Awaiting review</string>
+    <string name="report_type_task">Task-related</string>
+    <string name="report_type_general">General project report</string>
+    <string name="no_feedback_yet">No feedback has been recorded yet.</string>
+    <string name="professor_note_title">Advisor\'s note</string>
+    <string name="hint_write_comment">Write your comment...</string>
+    <string name="save_feedback">Save</string>
+    <string name="upload_new_report">Upload new report</string>
+
+    <!-- Modern reports redesign -->
+    <string name="reports_subtitle">University Final Project Management System</string>
+    <string name="stats_eyebrow">Overall approvals status</string>
+    <string name="stats_title">Documents review progress</string>
+    <string name="final_approval_label">Final approval</string>
+    <string name="stat_total_reports">Total reports</string>
+    <string name="stat_approved">Approved</string>
+    <string name="stat_pending">Awaiting review</string>
+    <string name="tab_all">All</string>
+    <string name="tab_approved">Approved</string>
+    <string name="tab_pending">Pending review</string>
+    <string name="status_pending_review">Pending review</string>
+    <string name="task_chip_fmt">Task: %1$s</string>
+    <string name="supervisor_role_label">Project supervisor</string>
+    <string name="hint_reply_supervisor">Short reply to the supervisor...</string>
+    <string name="pending_note_title">Awaiting supervisor review and feedback</string>
+    <string name="pending_note_body">Once feedback is added, a dedicated notification is sent to group members.</string>
+    <string name="pick_file">Pick file</string>
+    <string name="optional_link_task">Link to task (optional)</string>
+    <string name="none_option">None</string>
+    <string name="file_types_hint">pdf, doc, docx, jpg, png — max 10 MB</string>
+    
+        <!-- Upload report (modern) -->
+        <string name="upload_step_chip">Step 3 of 4</string>
+        <string name="select_task_linked">Select a linked task...</string>
+        <string name="pick_file_label">Choose file (PDF, Word or image — up to 10 MB)</string>
+        <string name="drop_here">Drop your file here</string>
+        <string name="drop_or_browse">Or use the button below to browse</string>
+        <string name="browse_from_device">Browse from device</string>
+        <string name="supplementary_desc">Additional notes</string>
+        <string name="hint_report_desc">Write notes or details about this report...</string>
+        <string name="upload_note_title">Important note about submitting a report</string>
+        <string name="upload_note_body">After uploading, your report is automatically sent to the supervisor and its status changes to "Pending review".</string>
+
+    <!-- Evaluation -->
+    <string name="evaluation_title">Final evaluation</string>
+    <string name="label_score">Score (out of 20)</string>
+    <string name="label_comments">Comments/notes</string>
+    <string name="already_evaluated">This project has already been evaluated.</string>
+    <string name="submit_evaluation">Submit evaluation</string>
+    
+        <!-- Final evaluation (modern) -->
+        <string name="eval_category_label">Final project evaluation</string>
+        <string name="eval_defense_badge">Final defense</string>
+        <string name="eval_group_fmt">Group: %1$s</string>
+        <string name="eval_progress_title">Project progress status</string>
+        <string name="eval_step_topic">Topic</string>
+        <string name="eval_step_draft">Draft</string>
+        <string name="eval_step_impl">Implementation</string>
+        <string name="eval_step_defense">Defense</string>
+        <string name="eval_form_title">Evaluation &amp; final grade form</string>
+        <string name="eval_grade_label">Final grade (out of 20)</string>
+        <string name="eval_grade_hint">e.g. 19.5</string>
+        <string name="eval_grade_suffix">out of 20</string>
+        <string name="eval_grade_note">Please enter the grade carefully between 0 and 20 (decimals allowed).</string>
+        <string name="eval_feedback_label">Final comments and detailed feedback</string>
+        <string name="eval_feedback_hint">Enter comments, strengths, weaknesses and details about the project and defense session here...</string>
+        <string name="eval_suggestions_label">Suggested phrases for quick feedback:</string>
+        <string name="eval_tag_quality">Excellent implementation</string>
+        <string name="eval_tag_defense">Confident defense</string>
+        <string name="eval_tag_docs">Complete documentation</string>
+        <string name="eval_tag_quality_text">The project was implemented with very high precision and quality.</string>
+        <string name="eval_tag_defense_text">The defense presentation was confident and clear.</string>
+        <string name="eval_tag_docs_text">Complete and accurate documentation was prepared.</string>
+        <string name="eval_save_btn">Save final evaluation</string>
+        <string name="eval_saved_toast">Final evaluation saved successfully.</string>
+
+    <!-- Admin -->
+    <string name="admin_dashboard_title">Admin Dashboard</string>
+    <string name="total_users">Total users</string>
+    <string name="total_projects">Total projects</string>
+    <string name="pending_projects">Pending projects</string>
+    <string name="manage_users">Manage users</string>
+    <string name="all_projects">All projects</string>
+    
+        <!-- Admin dashboard (modern) -->
+        <string name="admin_greeting_title">Welcome, dear administrator</string>
+        <string name="admin_summary_fmt">Currently %1$s users and %2$s registered projects. %3$s projects are pending review.</string>
+        <string name="admin_quick_stats">Quick stats for current term</string>
+        <string name="admin_full_report">Full report</string>
+        <string name="admin_stat_pending">Pending reviews</string>
+        <string name="admin_unit_item">items</string>
+        <string name="admin_tag_action">Action needed</string>
+        <string name="admin_stat_projects">Active projects</string>
+        <string name="admin_unit_registered">registered</string>
+        <string name="admin_tag_in_progress">In progress</string>
+        <string name="admin_main_sections">Main management sections</string>
+        <string name="admin_users_count_fmt">%1$s users</string>
+        <string name="admin_users_subtitle">Manage students, professors and access</string>
+        <string name="admin_projects_count_fmt">%1$s registered projects</string>
+        <string name="admin_projects_subtitle">View and monitor all projects of the current term</string>
+    <string name="search_hint">Search…</string>
+    <string name="professor_label">Supervisor</string>
+    <string name="progress_label">Progress</string>
+    <string name="score_label">Score</string>
+
+    <!-- Extra: shared / lists -->
+    <string name="project_progress_fmt">Progress: %1$d%%</string>
+    <string name="task_deadline_fmt">Deadline: %1$s</string>
+    <string name="task_assignee_fmt">Assignee: %1$s</string>
+    <string name="report_task_fmt">Task: %1$s</string>
+    <string name="report_date_fmt">Date: %1$s</string>
+    <string name="feedback_label">Feedback:</string>
+    <string name="status_update">Change status</string>
+    <string name="pick_start_end">Set the project start and end dates.</string>
+    <string name="set_dates">Set dates</string>
+    <string name="date_invalid">The end date must be after the start date.</string>
+    <string name="no_pending_topics">No topics are pending review.</string>
+        <string name="pending_topics_subtitle_fmt">%1$s topics are waiting for your review</string>
+        <string name="team_name_fmt">"%1$s" team</string>
+        <string name="members_names_fmt">Members: %1$s</string>
+        <string name="date_range_label">Set the project time range:</string>
+        <string name="expected_end_date">Expected end date</string>
+        <string name="approved_range_fmt">Approved range: %1$s to %2$s</string>
+        <string name="approved_active_running">Active and running</string>
+        <string name="approve_topic_full">Approve topic and set range</string>
+        <string name="reject_topic_full">Reject topic</string>
+        <string name="status_pending_approval">Pending approval</string>
+        <string name="status_approved_label">Approved</string>
+    <string name="team_of_fmt">Team: %1$s</string>
+    <string name="members_count_fmt">%1$d members</string>
+    <string name="search_users">Search users…</string>
+    <string name="search_projects">Search projects…</string>
+    <string name="role_admin">System Admin</string>
+    
+        <!-- Admin users (modern) -->
+        <string name="admin_users_page_subtitle">Review, edit and manage system access</string>
+        <string name="add_user_btn">Add user</string>
+        <string name="search_users_hint">Search by name, email or student ID...</string>
+        <string name="filter_all">All</string>
+        <string name="filter_students">Student</string>
+        <string name="filter_advisors">Advisor</string>
+        <string name="filter_admins">Admin</string>
+        <string name="user_id_fmt">ID: %1$d</string>
+        <string name="edit_user_title">Edit</string>
+    <string name="elevation_hint">Tap to view details</string>
+
+    <!-- Language selector -->
+    <string name="language">Language</string>
+    <string name="lang_dialog_title">Select language</string>
+    <string name="lang_fa">فارسی</string>
+    <string name="lang_ar">العربية</string>
+    <string name="lang_en">English</string>
+
+    <!-- Tasks screen (Stitch) -->
+    <string name="tasks_subtitle">Manage and track tasks assigned to team members</string>
+    <string name="filters">Filters</string>
+    <string name="overall_progress_pct">Overall project progress</string>
+    <string name="percent_fmt">%1$s%%</string>
+    <string name="tasks_completed_of_fmt">%1$s of %2$s tasks completed</string>
+    <string name="view_full_report">View full report</string>
+    <string name="assigned_to_fmt">Assigned to: %1$s</string>
+    <string name="change_status_label">Change status:</string>
+    <string name="no_tasks_yet">No tasks have been added yet</string>
+    <string name="no_tasks_yet_body">To start the project, assign new tasks to team members.</string>
+    <string name="add_first_task">Add the first task</string>
+
+    <!-- Admin projects (modern) -->
+    <string name="admin_projects_title">Manage Projects</string>
+    <string name="new_project_btn">New Project</string>
+    <string name="search_projects_hint">Search by project title, team or professor...</string>
+    <string name="filter_in_progress">In Progress</string>
+    <string name="filter_needs_eval">Needs Evaluation</string>
+    <string name="filter_completed">Completed</string>
+    <string name="proj_team_fmt">Team %1$s</string>
+    <string name="proj_professor_fmt">Advisor: %1$s</string>
+    <string name="proj_progress_label">Project Progress</string>
+    <string name="proj_final_score_label">Final score:</string>
+    <string name="proj_no_score">— No final score</string>
+    <string name="proj_awaiting_eval">Awaiting evaluation</string>
+    <string name="proj_details_manage">Details &amp; Manage</string>
+    <string name="proj_register_eval">Record Evaluation</string>
+
+    <!-- Appearance / day-night -->
+    <string name="appearance_title">Appearance</string>
+    <string name="theme_system">Follow system</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+
+    <!-- Server settings -->
+    <string name="server_settings_title">Server Settings</string>
+    <string name="server_current_fmt">Current server: %1$s</string>
+    <string name="server_url_hint">https://…/api/ or http://192.168.1.5:8000/api/</string>
+    <string name="server_save">Save &amp; Connect</string>
+    <string name="server_reset_default">Reset to default</string>
+    <string name="server_saved_toast">Server address saved.</string>
+    <string name="server_invalid_url">Invalid address. It must start with http:// or https://.</string>
+
+    <!-- Admin CRUD (create / edit / delete users & projects) -->
+    <string name="delete">Delete</string>
+    <string name="confirm_delete_title">Confirm delete</string>
+    <string name="confirm_delete_project_fmt">Are you sure you want to delete project \u201c%1$s\u201d? This cannot be undone.</string>
+    <string name="confirm_delete_user_fmt">Are you sure you want to delete user \u201c%1$s\u201d? This cannot be undone.</string>
+    <string name="manage_project_title">Manage project</string>
+    <string name="create_project_title">Create new project</string>
+    <string name="label_project_desc">Description (optional)</string>
+    <string name="label_status">Status</string>
+    <string name="label_progress">Progress percent</string>
+    <string name="action_saved_toast">Saved successfully.</string>
+    <string name="action_deleted_toast">Deleted.</string>
+    <string name="action_failed_toast">Operation failed.</string>
+    <string name="field_required_title">Title is required.</string>
+    <string name="new_user_title">Create new user</string>
+    <string name="edit_user_fmt">Edit %1$s</string>
+    <string name="label_fullname_short">Full name</string>
+    <string name="label_role">Role</string>
+    <string name="password_optional_hint">Password (optional when editing)</string>
+    <string name="toggle_status_unavailable">This account has no active/inactive status field.</string>
+    <string name="edit">Edit</string>
+    <string name="extend_deadline">Extend deadline</string>
+    <string name="extend_deadline_title">Extend project deadline</string>
+    <string name="extend_deadline_hint">Enter the new date (e.g. 2026-12-31)</string>
+    <string name="deadline_extended_fmt">Project deadline extended to %1$s</string>
+</resources>

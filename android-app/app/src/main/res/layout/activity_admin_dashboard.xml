@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/gutter"
+            android:paddingTop="@dimen/space_lg"
+            android:paddingBottom="@dimen/space_xl">
+
+            <!-- Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="@dimen/space_sm"
+                    android:background="@drawable/bg_circle_primary">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/admin_dashboard_title"
+                        android:src="@drawable/ic_lock"
+                        app:tint="@color/on_primary" />
+                </FrameLayout>
+
+                <TextView
+                    style="@style/Text.HeadlineSm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/admin_dashboard_title"
+                    android:textColor="@color/primary" />
+
+                <ImageView
+                    android:id="@+id/btnLogout"
+                    android:layout_width="@dimen/min_touch"
+                    android:layout_height="@dimen/min_touch"
+                    android:contentDescription="@string/logout"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_logout"
+                    app:tint="@color/on_surface_variant" />
+            </LinearLayout>
+
+            <!-- Warm greeting card -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_lg">
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginStart="-32dp"
+                    android:layout_marginBottom="-32dp"
+                    android:background="@drawable/bg_greeting_blob" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_greeting_card"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/space_lg">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/welcomeText"
+                            style="@style/Text.HeadlineMd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/admin_greeting_title"
+                            android:textColor="@color/on_primary" />
+
+                        <TextView
+                            android:id="@+id/greetingSummary"
+                            style="@style/Text.BodyMd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/space_xs"
+                            android:textColor="@color/on_primary_container" />
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/space_md"
+                        android:background="@drawable/bg_greeting_circle">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/admin_greeting_title"
+                            android:src="@drawable/ic_waving_hand"
+                            app:tint="@color/on_primary" />
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Quick stats header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_lg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Text.HeadlineSm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/admin_quick_stats"
+                    android:textColor="@color/on_surface" />
+
+                <TextView
+                    android:id="@+id/linkFullReport"
+                    style="@style/Text.LabelMd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/space_xs"
+                    android:text="@string/admin_full_report"
+                    android:textColor="@color/primary" />
+            </LinearLayout>
+
+            <!-- Stat cards row (real data) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_sm"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <!-- Pending reviews -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/space_sm"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_stat_card"
+                    android:elevation="1dp"
+                    android:orientation="vertical"
+                    android:padding="@dimen/space_md">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Text.LabelMd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/admin_stat_pending"
+                            android:textColor="@color/secondary" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:contentDescription="@string/admin_stat_pending"
+                            android:src="@drawable/ic_pending_actions"
+                            app:tint="@color/error" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/pendingCount"
+                        style="@style/Text.HeadlineMd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_xs"
+                        android:fontFamily="@font/vazirmatn_bold"
+                        android:text="۰"
+                        android:textColor="@color/on_surface" />
+
+                    <TextView
+                        android:id="@+id/pendingUnit"
+                        style="@style/Text.BodySm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/admin_unit_item"
+                        android:textColor="@color/on_surface_variant" />
+
+                    <TextView
+                        style="@style/Text.LabelSm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_xs"
+                        android:background="@drawable/bg_tag_error"
+                        android:paddingHorizontal="@dimen/space_xs"
+                        android:paddingVertical="2dp"
+                        android:text="@string/admin_tag_action"
+                        android:textColor="@color/error" />
+                </LinearLayout>
+
+                <!-- Active projects -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_sm"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_stat_card"
+                    android:elevation="1dp"
+                    android:orientation="vertical"
+                    android:padding="@dimen/space_md">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Text.LabelMd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/admin_stat_projects"
+                            android:textColor="@color/secondary" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:contentDescription="@string/admin_stat_projects"
+                            android:src="@drawable/ic_event_upcoming"
+                            app:tint="@color/primary" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/projectsCount"
+                        style="@style/Text.HeadlineMd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_xs"
+                        android:fontFamily="@font/vazirmatn_bold"
+                        android:text="۰"
+                        android:textColor="@color/on_surface" />
+
+                    <TextView
+                        style="@style/Text.BodySm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/admin_unit_registered"
+                        android:textColor="@color/on_surface_variant" />
+
+                    <TextView
+                        style="@style/Text.LabelSm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_xs"
+                        android:background="@drawable/bg_tag_primary"
+                        android:paddingHorizontal="@dimen/space_xs"
+                        android:paddingVertical="2dp"
+                        android:text="@string/admin_tag_in_progress"
+                        android:textColor="@color/on_primary_container"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Main sections header -->
+            <TextView
+                style="@style/Text.HeadlineSm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_lg"
+                android:text="@string/admin_main_sections"
+                android:textColor="@color/on_surface" />
+
+            <!-- Nav card: users -->
+            <LinearLayout
+                android:id="@+id/cardUsers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_md"
+                android:background="@drawable/bg_stat_card"
+                android:clickable="true"
+                android:elevation="2dp"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/space_lg">
+
+                <FrameLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="@dimen/space_md"
+                    android:background="@drawable/bg_nav_icon_tile">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/manage_users"
+                        android:src="@drawable/ic_group"
+                        app:tint="@color/on_secondary_container" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Text.BodyLg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/manage_users"
+                            android:textColor="@color/on_surface"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/usersBadge"
+                            style="@style/Text.LabelSm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/space_sm"
+                            android:background="@drawable/bg_count_pill"
+                            android:paddingHorizontal="@dimen/space_xs"
+                            android:paddingVertical="2dp"
+                            android:textColor="@color/on_surface_variant" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/Text.BodyMd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/admin_users_subtitle"
+                        android:textColor="@color/on_surface_variant" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@string/elevation_hint"
+                    android:src="@drawable/ic_chevron_left"
+                    app:tint="@color/on_surface_variant" />
+            </LinearLayout>
+
+            <!-- Nav card: projects -->
+            <LinearLayout
+                android:id="@+id/cardProjects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_md"
+                android:background="@drawable/bg_stat_card"
+                android:clickable="true"
+                android:elevation="2dp"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/space_lg">
+
+                <FrameLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="@dimen/space_md"
+                    android:background="@drawable/bg_nav_icon_tile">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/all_projects"
+                        android:src="@drawable/ic_folder_managed"
+                        app:tint="@color/on_secondary_container" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Text.BodyLg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/all_projects"
+                            android:textColor="@color/on_surface"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/projectsBadge"
+                            style="@style/Text.LabelSm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/space_sm"
+                            android:background="@drawable/bg_count_pill"
+                            android:paddingHorizontal="@dimen/space_xs"
+                            android:paddingVertical="2dp"
+                            android:textColor="@color/on_surface_variant" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/Text.BodyMd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/admin_projects_subtitle"
+                        android:textColor="@color/on_surface_variant" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@string/elevation_hint"
+                    android:src="@drawable/ic_chevron_left"
+                    app:tint="@color/on_surface_variant" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

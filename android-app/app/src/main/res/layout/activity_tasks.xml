@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/surface_container_lowest"
+            android:elevation="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/space_sm"
+            android:paddingVertical="@dimen/space_sm">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="@dimen/min_touch"
+                android:layout_height="@dimen/min_touch"
+                android:contentDescription="@string/back"
+                android:padding="12dp"
+                android:src="@drawable/ic_arrow_forward"
+                app:tint="@color/on_surface_variant" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Text.HeadlineSm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/project_tasks_title" />
+
+                <TextView
+                    android:id="@+id/projectTitle"
+                    style="@style/Text.LabelMd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/progressChip"
+                style="@style/ChipText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/space_xs"
+                android:background="@drawable/chip_in_progress"
+                android:textColor="@color/status_in_progress_fg"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:paddingHorizontal="@dimen/gutter"
+                    android:paddingTop="@dimen/space_lg"
+                    android:paddingBottom="96dp" />
+
+                <!-- Stitch empty state: dashed-free card with task_alt circle -->
+                <LinearLayout
+                    android:id="@+id/emptyState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/gutter"
+                    android:background="@drawable/bg_progress_card"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/gutter"
+                    android:paddingVertical="@dimen/space_xl"
+                    android:visibility="gone">
+
+                    <FrameLayout
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_marginBottom="@dimen/space_md"
+                        android:background="@drawable/bg_circle_secondary_container">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/no_tasks_yet"
+                            android:src="@drawable/ic_task_alt"
+                            app:tint="@color/on_secondary_container" />
+                    </FrameLayout>
+
+                    <TextView
+                        style="@style/Text.HeadlineSm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_tasks_yet" />
+
+                    <TextView
+                        style="@style/Text.BodyMuted"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_xs"
+                        android:gravity="center"
+                        android:text="@string/no_tasks_yet_body" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnAddFirstTask"
+                        style="@style/Widget.App.Button.Primary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_md"
+                        android:text="@string/add_first_task"
+                        android:visibility="gone"
+                        app:icon="@drawable/ic_add" />
+                </LinearLayout>
+            </FrameLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+    <!-- Stitch FAB: "افزودن وظیفه" pill, bottom-start -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabAddTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="@dimen/space_lg"
+        android:text="@string/add_task"
+        android:visibility="gone"
+        app:backgroundTint="@color/primary_container"
+        app:icon="@drawable/ic_add"
+        app:iconTint="@color/on_primary_container"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:strokeWidth="0dp" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

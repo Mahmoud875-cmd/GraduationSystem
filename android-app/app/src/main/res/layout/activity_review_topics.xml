@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface"
+    android:orientation="vertical">
+
+    <!-- Toolbar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/surface_container_lowest"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/space_sm"
+        android:paddingVertical="@dimen/space_sm">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/min_touch"
+            android:layout_height="@dimen/min_touch"
+            android:contentDescription="@string/back"
+            android:padding="12dp"
+            android:src="@drawable/ic_arrow_forward"
+            app:tint="@color/on_surface_variant" />
+
+        <TextView
+            style="@style/Text.HeadlineSm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_xs"
+            android:text="@string/review_topics_title" />
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingHorizontal="@dimen/gutter"
+                android:paddingTop="@dimen/space_lg"
+                android:paddingBottom="@dimen/space_xl" />
+
+            <!-- Page subtitle: "N موضوع در انتظار بررسی شماست" (Stitch) -->
+            <TextView
+                android:id="@+id/subtitleText"
+                style="@style/Text.BodyMuted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="@dimen/space_sm"
+                android:background="@drawable/bg_input"
+                android:paddingHorizontal="@dimen/space_md"
+                android:paddingVertical="4dp"
+                android:visibility="gone"
+                tools:text="۳ موضوع در انتظار بررسی شماست" />
+
+            <TextView
+                android:id="@+id/emptyText"
+                style="@style/Text.BodyMuted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/no_pending_topics"
+                android:visibility="gone" />
+        </FrameLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

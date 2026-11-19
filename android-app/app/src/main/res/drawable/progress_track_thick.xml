@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Stitch 12dp track for the overall progress bar (surface-container). -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/surface_container" />
+    <corners android:radius="999dp" />
+    <size android:height="12dp" />
+</shape>

@@ -1,0 +1,24 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Graduation cap (mortarboard) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,39 L82,50 L54,61 L26,50 Z" />
+    <!-- Base / band under the cap -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M40,56.5 L40,67 Q54,73 68,67 L68,56.5 L54,61.5 Z" />
+    <!-- Tassel button on top -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,37 m-2.2,0 a2.2,2.2 0 1,0 4.4,0 a2.2,2.2 0 1,0 -4.4,0" />
+    <!-- Tassel hanging from the right corner -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.2"
+        android:strokeLineCap="round"
+        android:pathData="M79,50.5 L79,61" />
+</vector>

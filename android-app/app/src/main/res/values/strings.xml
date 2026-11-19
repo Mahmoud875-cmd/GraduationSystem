@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">مدیریت پروژه‌پایانی</string>
+    <string name="app_subtitle">مدیریت پروژه‌های پایانی و پایان‌نامه‌ها</string>
+
+    <!-- Common -->
+    <string name="back">بازگشت</string>
+    <string name="save">ذخیره</string>
+    <string name="cancel">انصراف</string>
+    <string name="submit">ثبت</string>
+    <string name="loading">در حال بارگذاری…</string>
+    <string name="retry">تلاش دوباره</string>
+    <string name="logout">خروج از سامانه</string>
+    <string name="network_error">خطای ارتباط با سرور. لطفاً آدرس و اتصال را بررسی کنید.</string>
+    <string name="generic_error">اتفاق نامنتظره‌ای رخ داد.</string>
+
+    <!-- Auth: login -->
+    <string name="login_title">ورود به سامانه</string>
+    <string name="label_email">ایمیل دانشگاهی</string>
+    <string name="label_password">رمز عبور</string>
+    <string name="hint_email">name@university.ac.ir</string>
+    <string name="forgot_password">رمز عبور را فراموش کرده‌اید؟</string>
+    <string name="login_action">ورود</string>
+    <string name="no_account">حساب کاربری ندارید؟</string>
+    <string name="register_link">ثبت‌نام</string>
+
+    <!-- Auth: register -->
+    <string name="register_title">ثبت‌نام در سامانه</string>
+    <string name="register_subtitle">لطفاً اطلاعات خود را جهت ایجاد حساب کاربری وارد کنید.</string>
+    <string name="label_fullname">نام و نام خانوادگی</string>
+    <string name="hint_fullname">مثال: علی رضایی</string>
+    <string name="label_account_type">نوع حساب کاربری</string>
+    <string name="choose_option">انتخاب کنید…</string>
+    <string name="role_student">دانشجو</string>
+    <string name="role_professor">استاد راهنما</string>
+    <string name="label_confirm_password">تکرار رمز عبور</string>
+    <string name="have_account">قبلاً ثبت‌نام کرده‌اید؟</string>
+
+    <!-- Student dashboard -->
+    <string name="welcome_prefix">خوش آمدید،</string>
+    <string name="stat_project_progress">پیشرفت کلی پروژه</string>
+    <string name="stat_team_status">وضعیت تیم</string>
+    <string name="active_members_fmt">%1$d عضو فعال</string>
+    <string name="undergraduate_project">پروژه کارشناسی</string>
+    <string name="current_phase_progress">پیشرفت فاز کنونی</string>
+    <string name="view_tasks">مشاهده وظایف</string>
+    <string name="view_reports">گزارش‌ها و فایل‌ها</string>
+    <string name="your_team">تیم شما</string>
+    <string name="final_evaluation">ارزیابی نهایی</string>
+    <string name="supervisor_comment_fmt">نظر استاد راهنما (%1$s):</string>
+    <string name="empty_no_team_title">هنوز عضوی از هیچ تیمی نیستید</string>
+    <string name="empty_no_team_body">برای شروع فرآیند کار روی پروژه‌ها، ابتدا باید یک تیم جدید بسازید.</string>
+    <string name="create_new_team">ایجاد تیم جدید</string>
+    <string name="empty_no_project_title">تیم شما فاقد موضوع پروژه است</string>
+    <string name="empty_no_project_body">اکنون می‌توانید موضوع پروژه پیشنهادی خود را ثبت نمایید.</string>
+    <string name="register_project_topic">ثبت موضوع پروژه</string>
+
+    <!-- Create team -->
+    <string name="create_team_title">ایجاد تیم</string>
+    <string name="label_team_name">نام تیم</string>
+    <string name="hint_team_name">مثال: تیم آلفا</string>
+    <string name="label_member_emails">ایمیل اعضای تیم</string>
+    <string name="label_member_emails_optional">ایمیل اعضای تیم (اختیاری)</string>
+    <string name="team_ready_title">آماده برای شروع پرواز؟</string>
+    <string name="team_ready_body">پس از ایجاد تیم، امکان ویرایش اطلاعات و افزودن مستندات در داشبورد فراهم خواهد بود.</string>
+    <string name="back_to_dashboard">بازگشت به داشبورد</string>
+    <string name="hint_member_emails">ایمیل‌ها را با کاما جدا کنید</string>
+    <string name="members_help">فقط کاربران دانشجوی ثبت‌نام‌شده می‌توانند اضافه شوند.</string>
+
+    <!-- Register project -->
+    <string name="register_project_title">ثبت موضوع پروژه</string>
+    <string name="label_project_title">عنوان پروژه</string>
+    <string name="hint_project_title">عنوان پروژه خود را وارد کنید</string>
+    <string name="label_description">توضیحات</string>
+    <string name="hint_description">شرح مختصری از پروژه</string>
+    <string name="label_supervisor">استاد راهنما</string>
+    <string name="choose_supervisor">استاد را انتخاب کنید…</string>
+    <string name="regproj_step_label">گام نخست: تعریف و تصویب پروپوزال</string>
+    <string name="regproj_subtitle">برای شروع فرآیند پایان‌نامه، عنوان پیشنهادی، شرح ایده و استاد راهنمای مورد نظر خود را ثبت نمایید.</string>
+    <string name="regproj_progress_title">مرحله ۱ از ۳: تکمیل اطلاعات پایه</string>
+    <string name="regproj_progress_percent">۳۵٪ تکمیل شده</string>
+    <string name="req_mark">*</string>
+    <string name="hint_project_title_long">مثال: سامانه هوشمند پایش سلامت با استفاده از بینایی ماشین</string>
+    <string name="title_hint">عنوان باید رسا، تخصصی و ترجیحاً فاقد کلمات عمومی باشد.</string>
+    <string name="label_description_short">توضیح مختصر پروژه</string>
+    <string name="desc_hint">اهداف کلی، فناوری‌های مورد استفاده، مسئله اصلی و دستاوردهای مورد انتظار را در چند پاراگراف شرح دهید...</string>
+    <string name="desc_min_hint">حداقل ۱۰۰ کاراکتر برای داوری اولیه نیاز است.</string>
+    <string name="char_counter_fmt">%1$s / ۵۰۰ نویسه</string>
+    <string name="label_supervisor_requested">استاد راهنمای درخواستی</string>
+    <string name="supervisor_hint">پس از انتخاب، پرونده تحصیلی شما برای بررسی ظرفیت ارسال می‌شود.</string>
+    <string name="followup_title">روال پیگیری و تایید</string>
+    <string name="followup_body">نکته: پس از ارسال، درخواست شما برای استاد راهنمای انتخابی ارسال شده و وضعیت آن در داشبورد به صورت «در انتظار تایید» نمایش داده خواهد شد.</string>
+    <string name="checklist_title">راهنمای تایید سریع‌تر پروپوزال</string>
+    <string name="checklist_item1">• هماهنگی شفاهی پیشین با استاد مزیت بررسی دارد.</string>
+    <string name="checklist_item2">• عدم هم‌پوشانی بالای ۴۰٪ با پروژه‌های ۳ سال اخیر دانشگاه.</string>
+    <string name="submit_topic">ارسال موضوع</string>
+    <string name="cancel_and_return">انصراف و بازگشت</string>
+        <string name="chars_unit">نویسه</string>
+
+    <!-- Professor dashboard -->
+    <string name="pending_topics_count">موضوعات در انتظار بررسی</string>
+    <string name="review_topics">بررسی موضوعات</string>
+    <string name="my_projects">پروژه‌های من</string>
+    <string name="no_active_projects">هنوز پروژه تأییدشده‌ای ندارید.</string>
+    <string name="prof_panel_title">پنل استاد راهنما</string>
+    <string name="prof_supervisor_badge">استاد راهنما</string>
+    <string name="prof_pending_banner_title">بررسی موضوعات جدید</string>
+    <string name="prof_pending_banner_body_fmt">شما %1$s موضوع در انتظار بررسی دارید که توسط دانشجویان ارسال شده است.</string>
+    <string name="prof_total_projects">کل پروژه‌های فعال</string>
+    <string name="prof_defense_sessions">جلسات دفاع پیش‌رو</string>
+    <string name="prof_confirmed_projects">پروژه‌های تأییدشده</string>
+    <string name="view_all">مشاهده همه</string>
+    <string name="overall_progress">پیشرفت کل</string>
+    <string name="tasks_title">وظایف</string>
+    <string name="reports_title">گزارش‌ها</string>
+    <string name="evaluation_short">ارزیابی</string>
+
+    <!-- Review topics -->
+    <string name="review_topics_title">بررسی موضوعات</string>
+    <string name="approve">تأیید</string>
+    <string name="reject">رد</string>
+    <string name="label_start_date">تاریخ شروع</string>
+    <string name="label_end_date">تاریخ پایان</string>
+    <string name="team_members_label">اعضای تیم</string>
+
+    <!-- Tasks -->
+    <string name="project_tasks_title">وظایف پروژه</string>
+    <string name="add_task">افزودن وظیفه</string>
+    <string name="label_deadline">مهلت</string>
+    <string name="label_assignee">مسئول اجرا</string>
+    <string name="no_tasks">هنوز وظیفه‌ای تعریف نشده است.</string>
+
+    <!-- Add task screen -->
+    <string name="add_task_new_title">افزودن وظیفه جدید</string>
+    <string name="required">*</string>
+    <string name="task_created">وظیفه با موفقیت ثبت شد</string>
+    <string name="label_task_title">عنوان وظیفه</string>
+    <string name="hint_task_title">مثال: طراحی پایگاه داده ابری</string>
+    <string name="label_task_desc">توضیح وظیفه</string>
+    <string name="hint_task_desc">شرح جزئیات، نیازمندی‌ها و خروجی‌های مورد انتظار...</string>
+    <string name="label_task_deadline">مهلت نهایی</string>
+    <string name="label_task_assignee">محول کردن به</string>
+    <string name="notify_student_title">اعلان خودکار به دانشجو</string>
+    <string name="notify_student_body">پس از ثبت و اختصاص وظیفه، دانشجو به صورت خودکار از طریق سیستم اعلان‌ها مطلع خواهد شد و روند پیشرفت پروژه به‌روزرسانی می‌گردد.</string>
+    <string name="label_priority">اولویت وظیفه</string>
+    <string name="priority_urgent">فوری و بحرانی</string>
+    <string name="priority_normal">عادی</string>
+    <string name="priority_low">کم‌اولویت</string>
+    <string name="cancel_and_back">انصراف و بازگشت</string>
+
+    <!-- Task status labels -->
+    <string name="status_pending">در انتظار</string>
+    <string name="status_approved">تأیید شده</string>
+    <string name="status_rejected">رد شده</string>
+    <string name="status_in_progress">در حال انجام</string>
+    <string name="status_submitted">ارسال شده</string>
+    <string name="status_evaluated">ارزیابی شده</string>
+    <string name="task_todo">شروع نشده</string>
+    <string name="task_done">انجام شده</string>
+    <string name="task_late">دیرکرد</string>
+
+    <!-- Reports -->
+    <string name="project_reports_title">گزارش‌های پروژه</string>
+    <string name="upload_report">بارگذاری گزارش</string>
+    <string name="download">دانلود</string>
+    <string name="write_feedback">ثبت بازخورد</string>
+    <string name="feedback_hint">متن بازخورد استاد…</string>
+    <string name="no_reports">هنوز گزارشی بارگذاری نشده است.</string>
+
+    <!-- Reports list screen -->
+    <string name="filter_all_reports_fmt">همه گزارش‌ها (%1$s)</string>
+    <string name="filter_approved">تایید شده</string>
+    <string name="filter_pending_review">در انتظار نظر</string>
+    <string name="report_type_task">مرتبط با وظیفه</string>
+    <string name="report_type_general">گزارش عمومی پروژه</string>
+    <string name="no_feedback_yet">هنوز نظری ثبت نشده است.</string>
+    <string name="professor_note_title">نظر استاد راهنما</string>
+    <string name="hint_write_comment">نظر خود را بنویسید...</string>
+    <string name="save_feedback">ذخیره</string>
+    <string name="upload_new_report">بارگذاری گزارش جدید</string>
+
+    <!-- Modern reports redesign -->
+    <string name="reports_subtitle">سامانه مدیریت پروژه‌های پایانی دانشگاه</string>
+    <string name="stats_eyebrow">وضعیت کل مصوبات</string>
+    <string name="stats_title">پیشرفت بررسی مستندات</string>
+    <string name="final_approval_label">تأیید نهایی</string>
+    <string name="stat_total_reports">کل گزارش‌ها</string>
+    <string name="stat_approved">تأیید شده</string>
+    <string name="stat_pending">در انتظار نظر</string>
+    <string name="tab_all">همه</string>
+    <string name="tab_approved">تأیید شده</string>
+    <string name="tab_pending">در انتظار بررسی</string>
+    <string name="status_pending_review">در انتظار بررسی</string>
+    <string name="task_chip_fmt">وظیفه: %1$s</string>
+    <string name="supervisor_role_label">استاد راهنمای پروژه</string>
+    <string name="hint_reply_supervisor">پاسخ کوتاه به استاد راهنما...</string>
+    <string name="pending_note_title">در انتظار بررسی و ثبت بازخورد استاد راهنما</string>
+    <string name="pending_note_body">به محض درج بازخورد، اعلان اختصاصی برای اعضای گروه ارسال می‌شود.</string>
+    <string name="pick_file">انتخاب فایل</string>
+    <string name="optional_link_task">ارتباط با وظیفه (اختیاری)</string>
+    <string name="none_option">هیچ‌کدام</string>
+    <string name="file_types_hint">pdf, doc, docx, jpg, png — حداکثر ۱۰ مگابایت</string>
+
+    <!-- Upload report (modern) -->
+    <string name="upload_step_chip">گام ۳ از ۴</string>
+    <string name="select_task_linked">انتخاب وظیفه مرتبط...</string>
+    <string name="pick_file_label">انتخاب فایل (PDF، Word یا تصویر — تا ۱۰ مگابایت)</string>
+    <string name="drop_here">فایل خود را اینجا رها کنید</string>
+    <string name="drop_or_browse">یا از دکمه زیر برای انتخاب استفاده کنید</string>
+    <string name="browse_from_device">انتخاب فایل از دستگاه</string>
+    <string name="supplementary_desc">توضیحات تکمیلی</string>
+    <string name="hint_report_desc">نکات یا توضیحات مربوط به این گزارش را بنویسید...</string>
+    <string name="upload_note_title">نکته مهم درباره ارسال گزارش</string>
+    <string name="upload_note_body">پس از بارگذاری، گزارش شما به طور خودکار برای استاد راهنما ارسال شده و وضعیت آن به «در انتظار بررسی» تغییر خواهد کرد.</string>
+
+    <!-- Evaluation -->
+    <string name="evaluation_title">ارزیابی نهایی</string>
+    <string name="label_score">نمره (از ۲۰)</string>
+    <string name="label_comments">توضیحات/ملاحظات</string>
+    <string name="already_evaluated">این پروژه قبلاً ارزیابی شده است.</string>
+    <string name="submit_evaluation">ثبت ارزیابی</string>
+
+    <!-- Final evaluation (modern) -->
+    <string name="eval_category_label">ارزیابی نهایی پروژه</string>
+    <string name="eval_defense_badge">دفاع نهایی</string>
+    <string name="eval_group_fmt">گروه: %1$s</string>
+    <string name="eval_progress_title">وضعیت پیشرفت پروژه</string>
+    <string name="eval_step_topic">موضوع</string>
+    <string name="eval_step_draft">پیش‌نویس</string>
+    <string name="eval_step_impl">پیاده‌سازی</string>
+    <string name="eval_step_defense">دفاع</string>
+    <string name="eval_form_title">فرم ثبت ارزیابی و نمره نهایی</string>
+    <string name="eval_grade_label">نمره نهایی (از ۲۰)</string>
+    <string name="eval_grade_hint">مثلاً ۱۹.۵</string>
+    <string name="eval_grade_suffix">از ۲۰</string>
+    <string name="eval_grade_note">لطفاً نمره را با دقت بین ۰ تا ۲۰ وارد کنید (امکان ثبت اعشار وجود دارد).</string>
+    <string name="eval_feedback_label">نظرات پایانی و بازخورد تفصیلی</string>
+    <string name="eval_feedback_hint">نظرات، نقاط قوت، ضعف و توضیحات تکمیلی پیرامون پروژه و جلسه دفاع را اینجا وارد کنید...</string>
+    <string name="eval_suggestions_label">عبارات پیشنهادی برای بازخورد سریع:</string>
+    <string name="eval_tag_quality">کیفیت پیاده‌سازی عالی</string>
+    <string name="eval_tag_defense">دفاعیه مسلط</string>
+    <string name="eval_tag_docs">مستندات کامل</string>
+    <string name="eval_tag_quality_text">پروژه با دقت و کیفیت بسیار بالایی پیاده‌سازی شده است.</string>
+    <string name="eval_tag_defense_text">ارائه دفاعیه بسیار مسلط و شفاف بود.</string>
+    <string name="eval_tag_docs_text">مستندات کامل و دقیق تهیه شده است.</string>
+    <string name="eval_save_btn">ذخیره ارزیابی نهایی</string>
+    <string name="eval_saved_toast">ارزیابی نهایی با موفقیت ذخیره شد.</string>
+
+    <!-- Admin -->
+    <string name="admin_dashboard_title">داشبورد مدیر سیستم</string>
+    <string name="total_users">کل کاربران</string>
+    <string name="total_projects">کل پروژه‌ها</string>
+    <string name="pending_projects">پروژه‌های در انتظار</string>
+    <string name="manage_users">مدیریت کاربران</string>
+    <string name="all_projects">همه پروژه‌ها</string>
+
+    <!-- Admin dashboard (modern) -->
+    <string name="admin_greeting_title">خوش آمدید، مدیر سیستم عزیز</string>
+    <string name="admin_summary_fmt">در حال حاضر %1$s کاربر و %2$s پروژه ثبت شده است. %3$s پروژه در انتظار بررسی می‌باشد.</string>
+    <string name="admin_quick_stats">آمار سریع ترم جاری</string>
+    <string name="admin_full_report">گزارش کامل</string>
+    <string name="admin_stat_pending">بررسی‌های معلق</string>
+    <string name="admin_unit_item">مورد</string>
+    <string name="admin_tag_action">نیاز به اقدام</string>
+    <string name="admin_stat_projects">پروژه‌های فعال</string>
+    <string name="admin_unit_registered">ثبت‌شده</string>
+    <string name="admin_tag_in_progress">در حال اجرا</string>
+    <string name="admin_main_sections">بخش‌های اصلی مدیریت</string>
+    <string name="admin_users_count_fmt">%1$s کاربر</string>
+    <string name="admin_users_subtitle">مدیریت دانشجویان، اساتید و دسترسی‌ها</string>
+    <string name="admin_projects_count_fmt">%1$s پروژه ثبت‌شده</string>
+    <string name="admin_projects_subtitle">مشاهده و نظارت بر تمامی پروژه‌های ترم جاری</string>
+    <string name="search_hint">جستجو…</string>
+    <string name="professor_label">استاد</string>
+    <string name="progress_label">پیشرفت</string>
+    <string name="score_label">نمره</string>
+
+    <!-- Extra: shared / lists -->
+    <string name="project_progress_fmt">پیشرفت: %1$d٪</string>
+    <string name="task_deadline_fmt">مهلت: %1$s</string>
+    <string name="task_assignee_fmt">مسئول: %1$s</string>
+    <string name="report_task_fmt">وظیفه: %1$s</string>
+    <string name="report_date_fmt">تاریخ: %1$s</string>
+    <string name="feedback_label">بازخورد:</string>
+    <string name="status_update">تغییر وضعیت</string>
+    <string name="pick_start_end">تاریخ شروع و پایان پروژه را مشخص کنید.</string>
+    <string name="set_dates">تعیین تاریخ‌ها</string>
+    <string name="date_invalid">تاریخ پایان باید بعد از تاریخ شروع باشد.</string>
+    <string name="no_pending_topics">موضوع در انتظاری برای بررسی نیست.</string>
+    <string name="pending_topics_subtitle_fmt">%1$s موضوع در انتظار بررسی شماست</string>
+    <string name="team_name_fmt">تیم «%1$s»</string>
+    <string name="members_names_fmt">اعضا: %1$s</string>
+    <string name="date_range_label">تعیین بازه زمانی پروژه:</string>
+    <string name="expected_end_date">تاریخ پایان مورد انتظار</string>
+    <string name="approved_range_fmt">بازه مصوب: %1$s الی %2$s</string>
+    <string name="approved_active_running">فعال در حال اجرا</string>
+    <string name="approve_topic_full">تأیید موضوع و تعیین بازه</string>
+    <string name="reject_topic_full">رد موضوع</string>
+    <string name="status_pending_approval">در انتظار تأیید</string>
+    <string name="status_approved_label">تأیید شده</string>
+    <string name="team_of_fmt">تیم: %1$s</string>
+    <string name="members_count_fmt">%1$d عضو</string>
+    <string name="search_users">جستجوی کاربران…</string>
+    <string name="search_projects">جستجوی پروژه‌ها…</string>
+    <string name="role_admin">مدیر سیستم</string>
+
+    <!-- Admin users (modern) -->
+    <string name="admin_users_page_subtitle">بررسی، ویرایش و مدیریت دسترسی‌های سامانه</string>
+    <string name="add_user_btn">افزودن کاربر</string>
+    <string name="search_users_hint">جستجوی نام، ایمیل یا شماره دانشجویی...</string>
+    <string name="filter_all">همه</string>
+    <string name="filter_students">دانشجو</string>
+    <string name="filter_advisors">استاد راهنما</string>
+    <string name="filter_admins">مدیر</string>
+    <string name="user_id_fmt">شناسه: %1$d</string>
+    <string name="edit_user_title">ویرایش</string>
+    <string name="elevation_hint">برای مشاهده جزئیات ضربه بزنید</string>
+
+    <!-- Language selector -->
+    <string name="language">زبان</string>
+    <string name="lang_dialog_title">انتخاب زبان</string>
+    <string name="lang_fa">فارسی</string>
+    <string name="lang_ar">العربية</string>
+    <string name="lang_en">English</string>
+
+    <!-- Student dashboard: team card -->
+    <string name="your_team_fmt">تیم شما (%1$s)</string>
+    <string name="team_leader">سرگروه</string>
+    <string name="team_member">عضو تیم</string>
+
+    <!-- Tasks screen (Stitch) -->
+    <string name="tasks_subtitle">مدیریت و پیگیری وظایف محول شده به اعضای تیم</string>
+    <string name="filters">فیلترها</string>
+    <string name="overall_progress_pct">درصد پیشرفت کل پروژه</string>
+    <string name="percent_fmt">%1$s٪</string>
+    <string name="tasks_completed_of_fmt">%1$s وظیفه از %2$s وظیفه تکمیل شده</string>
+    <string name="view_full_report">مشاهده گزارش کامل</string>
+    <string name="assigned_to_fmt">محول شده به: %1$s</string>
+    <string name="change_status_label">تغییر وضعیت:</string>
+    <string name="no_tasks_yet">هنوز وظیفه‌ای ثبت نشده</string>
+    <string name="no_tasks_yet_body">برای شروع فرآیند پروژه، وظایف جدید را به اعضای تیم اختصاص دهید.</string>
+    <string name="add_first_task">افزودن اولین وظیفه</string>
+
+    <!-- Admin projects (modern) -->
+    <string name="admin_projects_title">مدیریت پروژه‌ها</string>
+    <string name="new_project_btn">پروژه جدید</string>
+    <string name="search_projects_hint">جستجوی عنوان پروژه، تیم یا استاد...</string>
+    <string name="filter_in_progress">در حال انجام</string>
+    <string name="filter_needs_eval">نیازمند ارزیابی</string>
+    <string name="filter_completed">تکمیل‌شده</string>
+    <string name="proj_team_fmt">تیم %1$s</string>
+    <string name="proj_professor_fmt">استاد راهنما: %1$s</string>
+    <string name="proj_progress_label">پیشرفت پروژه</string>
+    <string name="proj_final_score_label">نمره نهایی:</string>
+    <string name="proj_no_score">— نمره نهایی</string>
+    <string name="proj_awaiting_eval">منتظر ثبت ارزیابی</string>
+    <string name="proj_details_manage">جزئیات و مدیریت</string>
+    <string name="proj_register_eval">ثبت ارزیابی</string>
+
+    <!-- Appearance / day-night -->
+    <string name="appearance_title">حالت نمایش</string>
+    <string name="theme_system">تبعا از سیستم</string>
+    <string name="theme_light">روز (روشن)</string>
+    <string name="theme_dark">شب (تاریک)</string>
+
+    <!-- Server settings -->
+    <string name="server_settings_title">تنظیمات سرور</string>
+    <string name="server_current_fmt">سرور فعلی: %1$s</string>
+    <string name="server_url_hint">https://…/api/ یا http://192.168.1.5:8000/api/</string>
+    <string name="server_save">ذخیره و اتصال</string>
+    <string name="server_reset_default">بازگشت به پیش‌فرض</string>
+    <string name="server_saved_toast">آدرس سرور ذخیره شد.</string>
+    <string name="server_invalid_url">آدرس نامعتبر است. باید با http:// یا https:// شروع شود.</string>
+
+    <!-- Admin CRUD (create / edit / delete users & projects) -->
+    <string name="delete">حذف</string>
+    <string name="confirm_delete_title">تأیید حذف</string>
+    <string name="confirm_delete_project_fmt">آیا از حذف پروژه «%1$s» مطمئن هستید؟ این عمل قابل بازگشت نیست.</string>
+    <string name="confirm_delete_user_fmt">آیا از حذف کاربر «%1$s» مطمئن هستید؟ این عمل قابل بازگشت نیست.</string>
+    <string name="manage_project_title">مدیریت پروژه</string>
+    <string name="create_project_title">ایجاد پروژه جدید</string>
+    <string name="label_project_desc">توضیحات (اختیاری)</string>
+    <string name="label_status">وضعیت</string>
+    <string name="label_progress">درصد پیشرفت</string>
+    <string name="action_saved_toast">با موفقیت ذخیره شد.</string>
+    <string name="action_deleted_toast">حذف شد.</string>
+    <string name="action_failed_toast">عملیات ناموفق بود.</string>
+    <string name="field_required_title">عنوان الزامی است.</string>
+    <string name="new_user_title">ایجاد کاربر جدید</string>
+    <string name="edit_user_fmt">ویرایش %1$s</string>
+    <string name="label_fullname_short">نام کامل</string>
+    <string name="label_role">نقش</string>
+    <string name="password_optional_hint">رمز عبور (اختیاری برای ویرایش)</string>
+    <string name="toggle_status_unavailable">این حساب دارای وضعیت فعال/غیرفعال نیست.</string>
+    <string name="edit">ویرایش</string>
+    <string name="extend_deadline">تمدید مهلت</string>
+    <string name="extend_deadline_title">تمدید مهلت پروژه</string>
+    <string name="extend_deadline_hint">تاریخ جدید را وارد کنید (مثلاً 2026-12-31)</string>
+    <string name="deadline_extended_fmt">مهلت پروژه به %1$s تمدید شد</string>
+</resources>

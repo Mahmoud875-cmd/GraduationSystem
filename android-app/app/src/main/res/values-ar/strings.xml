@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">نظام المشاريع</string>
+    <string name="app_subtitle">إدارة مشاريع التخرج والرسائل العلمية</string>
+
+    <!-- Common -->
+    <string name="back">رجوع</string>
+    <string name="save">حفظ</string>
+    <string name="cancel">إلغاء</string>
+    <string name="submit">إرسال</string>
+    <string name="loading">جارٍ التحميل…</string>
+    <string name="retry">إعادة المحاولة</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="network_error">خطأ في الاتصال بالخادم. يرجى التحقق من العنوان والاتصال.</string>
+    <string name="generic_error">حدث أمر غير متوقع.</string>
+
+    <!-- Auth: login -->
+    <string name="login_title">تسجيل الدخول إلى النظام</string>
+    <string name="label_email">البريد الإلكتروني الجامعي</string>
+    <string name="label_password">كلمة المرور</string>
+    <string name="hint_email">name@university.edu</string>
+    <string name="forgot_password">هل نسيت كلمة المرور؟</string>
+    <string name="login_action">دخول</string>
+    <string name="no_account">لا تملك حساباً؟</string>
+    <string name="register_link">إنشاء حساب</string>
+
+    <!-- Auth: register -->
+    <string name="register_title">التسجيل في النظام</string>
+    <string name="register_subtitle">يرجى إدخال بياناتك لإنشاء حساب مستخدم.</string>
+    <string name="label_fullname">الاسم الكامل</string>
+    <string name="hint_fullname">مثال: علي رضائي</string>
+    <string name="label_account_type">نوع الحساب</string>
+    <string name="choose_option">اختر…</string>
+    <string name="role_student">طالب</string>
+    <string name="role_professor">المشرف</string>
+    <string name="label_confirm_password">تأكيد كلمة المرور</string>
+    <string name="have_account">هل سبق لك التسجيل؟</string>
+
+    <!-- Student dashboard -->
+    <string name="welcome_prefix">مرحباً،</string>
+    <string name="stat_project_progress">التقدم العام للمشروع</string>
+    <string name="stat_team_status">حالة الفريق</string>
+    <string name="active_members_fmt">%1$d عضو نشط</string>
+    <string name="undergraduate_project">مشروع التخرج</string>
+    <string name="current_phase_progress">تقدم المرحلة الحالية</string>
+    <string name="view_tasks">عرض المهام</string>
+    <string name="view_reports">التقارير والملفات</string>
+    <string name="your_team">فريقك</string>
+    <string name="final_evaluation">التقييم النهائي</string>
+    <string name="supervisor_comment_fmt">رأي المشرف (%1$s):</string>
+    <string name="empty_no_team_title">لست عضواً في أي فريق بعد</string>
+    <string name="empty_no_team_body">لبدء العمل على المشاريع، يجب أولاً إنشاء فريق جديد.</string>
+    <string name="create_new_team">إنشاء فريق جديد</string>
+    <string name="empty_no_project_title">فريقك لا يملك موضوع مشروع</string>
+    <string name="empty_no_project_body">يمكنك الآن تسجيل موضوع المشروع المقترح.</string>
+    <string name="register_project_topic">تسجيل موضوع المشروع</string>
+
+    <!-- Create team -->
+    <string name="create_team_title">إنشاء فريق</string>
+    <string name="label_team_name">اسم الفريق</string>
+    <string name="hint_team_name">مثال: فريق ألفا</string>
+    <string name="label_member_emails">بريد أعضاء الفريق</string>
+    <string name="label_member_emails_optional">بريد أعضاء الفريق (اختياري)</string>
+    <string name="team_ready_title">جاهز لبدء الرحلة؟</string>
+    <string name="team_ready_body">بعد إنشاء الفريق، يمكنك تعديل المعلومات وإضافة المستندات من لوحة التحكم.</string>
+    <string name="back_to_dashboard">العودة إلى لوحة التحكم</string>
+    <string name="hint_member_emails">افصل البريد بفاصلة</string>
+    <string name="members_help">يمكن إضافة الطلاب المسجلين فقط.</string>
+
+    <!-- Register project -->
+    <string name="register_project_title">تسجيل موضوع المشروع</string>
+    <string name="label_project_title">عنوان المشروع</string>
+    <string name="hint_project_title">أدخل عنوان مشروعك</string>
+    <string name="label_description">الوصف</string>
+    <string name="hint_description">وصف موجز للمشروع</string>
+    <string name="label_supervisor">المشرف</string>
+    <string name="choose_supervisor">اختر المشرف…</string>
+    <string name="regproj_step_label">الخطوة الأولى: تعريف المقترح واعتماده</string>
+    <string name="regproj_subtitle">لبدء عملية التخرج، سجّل العنوان المقترح ووصف الفكرة والمشرف المطلوب.</string>
+    <string name="regproj_progress_title">المرحلة ١ من : إكمال البيانات الأساسية</string>
+    <string name="regproj_progress_percent">٣٥٪ مكتمل</string>
+    <string name="req_mark">*</string>
+    <string name="hint_project_title_long">مثال: نظام ذكي لمراقبة الصحة باستخدام الرؤية الحاسوبية</string>
+    <string name="title_hint">يجب أن يكون العنوان واضحًا ومتخصصًا وخالياً قدر الإمكان من الكلمات العامة.</string>
+    <string name="label_description_short">وصف مختصر للمشروع</string>
+    <string name="desc_hint">اشرح الأهداف العامة والتقنيات المستخدمة والقضية الأساسية والمخرجات المتوقعة في عدة فقرات...</string>
+    <string name="desc_min_hint">مطلوب ١٠٠ حرف على الأقل للتقييم الأولي.</string>
+    <string name="char_counter_fmt">%1$s / ٥٠٠ حرف</string>
+    <string name="label_supervisor_requested">المشرف المطلوب</string>
+    <string name="supervisor_hint">بعد الاختيار، يُرسل ملفك الدراسي للتحقق من السعة المتاحة.</string>
+    <string name="followup_title">سير المتابعة والاعتماد</string>
+    <string name="followup_body">ملاحظة: بعد الإرسال، يُرسل طلبك إلى المشرف المختار وتظهر حالته في لوحة التحكم كـ«بانتظار الاعتماد».</string>
+    <string name="checklist_title">إرشادات لاعتماد أسرع للمقترح</string>
+    <string name="checklist_item1">• التنسيق الشفهي المسبق مع الأستاذ يميّز الطلب.</string>
+    <string name="checklist_item2">• ألا يتجاوز التداخل ٤٠٪ مع مشاريع الجامعة في آخر ٣ سنوات.</string>
+    <string name="submit_topic">إرسال الموضوع</string>
+    <string name="cancel_and_return">إلغاء والعودة</string>
+        <string name="chars_unit">حرفًا</string>
+
+    <!-- Professor dashboard -->
+    <string name="pending_topics_count">مواضيع بانتظار المراجعة</string>
+    <string name="review_topics">مراجعة المواضيع</string>
+    <string name="my_projects">مشاريعي</string>
+    <string name="no_active_projects">لا توجد مشاريع معتمدة بعد.</string>
+        <string name="prof_panel_title">لوحة المشرف</string>
+        <string name="prof_supervisor_badge">مشرف</string>
+        <string name="prof_pending_banner_title">مراجعة المواضيع الجديدة</string>
+        <string name="prof_pending_banner_body_fmt">لديكم %1$s مواضيع بانتظار المراجعة أرسلها الطلاب.</string>
+        <string name="prof_total_projects">إجمالي المشاريع النشطة</string>
+        <string name="prof_defense_sessions">جلسات مناقشة قادمة</string>
+        <string name="prof_confirmed_projects">المشاريع المعتمدة</string>
+        <string name="view_all">عرض الكل</string>
+        <string name="overall_progress">التقدم الكلي</string>
+        <string name="tasks_title">المهام</string>
+        <string name="reports_title">التقارير</string>
+        <string name="evaluation_short">تقييم</string>
+
+    <!-- Review topics -->
+    <string name="review_topics_title">مراجعة المواضيع</string>
+    <string name="approve">اعتماد</string>
+    <string name="reject">رفض</string>
+    <string name="label_start_date">تاريخ البداية</string>
+    <string name="label_end_date">تاريخ النهاية</string>
+    <string name="team_members_label">أعضاء الفريق</string>
+
+    <!-- Tasks -->
+    <string name="project_tasks_title">مهام المشروع</string>
+    <string name="add_task">إضافة مهمة</string>
+    <string name="label_deadline">الموعد النهائي</string>
+    <string name="label_assignee">المسؤول</string>
+    <string name="no_tasks">لم يتم تحديد أي مهمة بعد.</string>
+
+    <!-- Add task screen -->
+    <string name="add_task_new_title">إضافة مهمة جديدة</string>
+    <string name="required">*</string>
+    <string name="task_created">تم تسجيل المهمة بنجاح</string>
+    <string name="label_task_title">عنوان المهمة</string>
+    <string name="hint_task_title">مثال: تصميم قاعدة بيانات سحابية</string>
+    <string name="label_task_desc">وصف المهمة</string>
+    <string name="hint_task_desc">اشرح التفاصيل والمتطلبات والمخرجات المتوقعة...</string>
+    <string name="label_task_deadline">الموعد النهائي</string>
+    <string name="label_task_assignee">إسناد إلى</string>
+    <string name="notify_student_title">إشعار تلقائي للطالب</string>
+    <string name="notify_student_body">بعد حفظ المهمة وإسنادها، سيُبلغ الطالب تلقائيًا عبر نظام الإشعارات وسيتم تحديث تقدم المشروع.</string>
+    <string name="label_priority">أولوية المهمة</string>
+    <string name="priority_urgent">عاجلة وحرجة</string>
+    <string name="priority_normal">عادية</string>
+    <string name="priority_low">منخفضة الأولوية</string>
+    <string name="cancel_and_back">إلغاء ورجوع</string>
+
+    <!-- Task status labels -->
+    <string name="status_pending">قيد الانتظار</string>
+    <string name="status_approved">معتمد</string>
+    <string name="status_rejected">مرفوض</string>
+    <string name="status_in_progress">قيد التنفيذ</string>
+    <string name="status_submitted">تم الإرسال</string>
+    <string name="status_evaluated">تم التقييم</string>
+    <string name="task_todo">لم تبدأ</string>
+    <string name="task_done">منجزة</string>
+    <string name="task_late">متأخرة</string>
+
+    <!-- Reports -->
+    <string name="project_reports_title">تقارير المشروع</string>
+    <string name="upload_report">رفع تقرير</string>
+    <string name="download">تنزيل</string>
+    <string name="write_feedback">إضافة ملاحظة</string>
+    <string name="feedback_hint">نص ملاحظة المشرف…</string>
+    <string name="no_reports">لم يتم رفع أي تقرير بعد.</string>
+
+    <!-- Reports list screen -->
+    <string name="filter_all_reports_fmt">كل التقارير (%1$s)</string>
+    <string name="filter_approved">معتمد</string>
+    <string name="filter_pending_review">بانتظار المراجعة</string>
+    <string name="report_type_task">مرتبط بمهمة</string>
+    <string name="report_type_general">تقرير عام للمشروع</string>
+    <string name="no_feedback_yet">لم يتم تسجيل أي رأي بعد.</string>
+    <string name="professor_note_title">رأي المشرف</string>
+    <string name="hint_write_comment">اكتب رأيك...</string>
+    <string name="save_feedback">حفظ</string>
+    <string name="upload_new_report">رفع تقرير جديد</string>
+
+    <!-- Modern reports redesign -->
+    <string name="reports_subtitle">نظام إدارة مشاريع التخرج الجامعية</string>
+    <string name="stats_eyebrow">حالة كل الموافقات</string>
+    <string name="stats_title">تقدّم مراجعة المستندات</string>
+    <string name="final_approval_label">موافقة نهائية</string>
+    <string name="stat_total_reports">كل التقارير</string>
+    <string name="stat_approved">معتمد</string>
+    <string name="stat_pending">بانتظار الرأي</string>
+    <string name="tab_all">الكل</string>
+    <string name="tab_approved">معتمد</string>
+    <string name="tab_pending">بانتظار المراجعة</string>
+    <string name="status_pending_review">بانتظار المراجعة</string>
+    <string name="task_chip_fmt">المهمة: %1$s</string>
+    <string name="supervisor_role_label">مشرف المشروع</string>
+    <string name="hint_reply_supervisor">رد قصير على المشرف...</string>
+    <string name="pending_note_title">بانتظار مراجعة المشرف وتسجيل الملاحظة</string>
+    <string name="pending_note_body">بمجرد إضافة الملاحظة، سيتم إرسال إشعار خاص لأعضاء المجموعة.</string>
+    <string name="pick_file">اختيار ملف</string>
+    <string name="optional_link_task">ربط بمهمة (اختياري)</string>
+    <string name="none_option">لا شيء</string>
+    <string name="file_types_hint">pdf, doc, docx, jpg, png — حتى 10 ميغابايت</string>
+    
+        <!-- Upload report (modern) -->
+        <string name="upload_step_chip">الخطوة 3 من 4</string>
+        <string name="select_task_linked">اختر المهمة المرتبطة...</string>
+        <string name="pick_file_label">اختيار ملف (PDF أو Word أو صورة — حتى 10 ميغابايت)</string>
+        <string name="drop_here">أفلت ملفك هنا</string>
+        <string name="drop_or_browse">أو استخدم الزر التالي للاختيار</string>
+        <string name="browse_from_device">اختيار ملف من الجهاز</string>
+        <string name="supplementary_desc">ملاحظات إضافية</string>
+        <string name="hint_report_desc">اكتب نقاطًا أو توضيحات متعلقة بهذا التقرير...</string>
+        <string name="upload_note_title">ملاحظة مهمة حول إرسال التقرير</string>
+        <string name="upload_note_body">بعد الرفع، سيُرسل تقريرك تلقائيًا إلى المشرف ويتحوّل حالته إلى «قيد المراجعة».</string>
+
+    <!-- Evaluation -->
+    <string name="evaluation_title">التقييم النهائي</string>
+    <string name="label_score">العلامة (من 20)</string>
+    <string name="label_comments">ملاحظات/تعليقات</string>
+    <string name="already_evaluated">تم تقييم هذا المشروع سابقاً.</string>
+    <string name="submit_evaluation">إرسال التقييم</string>
+    
+        <!-- Final evaluation (modern) -->
+        <string name="eval_category_label">التقييم النهائي للمشروع</string>
+        <string name="eval_defense_badge">الدفاع النهائي</string>
+        <string name="eval_group_fmt">المجموعة: %1$s</string>
+        <string name="eval_progress_title">حالة تقدّم المشروع</string>
+        <string name="eval_step_topic">الموضوع</string>
+        <string name="eval_step_draft">المسودة</string>
+        <string name="eval_step_impl">التنفيذ</string>
+        <string name="eval_step_defense">الدفاع</string>
+        <string name="eval_form_title">نموذج تسجيل التقييم والعلامة النهائية</string>
+        <string name="eval_grade_label">العلامة النهائية (من 20)</string>
+        <string name="eval_grade_hint">مثلاً 19.5</string>
+        <string name="eval_grade_suffix">من 20</string>
+        <string name="eval_grade_note">يرجى إدخال العلامة بدقة بين 0 و 20 (يمكن إدخال كسور).</string>
+        <string name="eval_feedback_label">الملاحظات الختامية والتغذية الراجعة التفصيلية</string>
+        <string name="eval_feedback_hint">اكتب هنا الملاحظات ونقاط القوة والضعف والتوضيحات حول المشروع وجلسة الدفاع...</string>
+        <string name="eval_suggestions_label">عبارات مقترحة لتغذية راجعة سريعة:</string>
+        <string name="eval_tag_quality">جودة تنفيذ عالية</string>
+        <string name="eval_tag_defense">دفاع متقن</string>
+        <string name="eval_tag_docs">وثائق كاملة</string>
+        <string name="eval_tag_quality_text">تم تنفيذ المشروع بدقة وجودة عالية جدًا.</string>
+        <string name="eval_tag_defense_text">كان عرض الدفاع متمكنًا وواضحًا للغاية.</string>
+        <string name="eval_tag_docs_text">تم إعداد وثائق كاملة ودقيقة.</string>
+        <string name="eval_save_btn">حفظ التقييم النهائي</string>
+        <string name="eval_saved_toast">تم حفظ التقييم النهائي بنجاح.</string>
+
+    <!-- Admin -->
+    <string name="admin_dashboard_title">لوحة تحكم المدير</string>
+    <string name="total_users">إجمالي المستخدمين</string>
+    <string name="total_projects">إجمالي المشاريع</string>
+    <string name="pending_projects">مشاريع قيد الانتظار</string>
+    <string name="manage_users">إدارة المستخدمين</string>
+    <string name="all_projects">كل المشاريع</string>
+    
+        <!-- Admin dashboard (modern) -->
+        <string name="admin_greeting_title">مرحبًا، أيها المدير العزيز</string>
+        <string name="admin_summary_fmt">حاليًا %1$s مستخدم و%2$s مشروع مسجّل. %3$s مشروع قيد المراجعة.</string>
+        <string name="admin_quick_stats">إحصائيات سريعة للفصل الحالي</string>
+        <string name="admin_full_report">تقرير كامل</string>
+        <string name="admin_stat_pending">مراجعات معلّقة</string>
+        <string name="admin_unit_item">عنصر</string>
+        <string name="admin_tag_action">يتطلب إجراء</string>
+        <string name="admin_stat_projects">المشاريع النشطة</string>
+        <string name="admin_unit_registered">مسجّل</string>
+        <string name="admin_tag_in_progress">قيد التنفيذ</string>
+        <string name="admin_main_sections">الأقسام الرئيسية للإدارة</string>
+        <string name="admin_users_count_fmt">%1$s مستخدم</string>
+        <string name="admin_users_subtitle">إدارة الطلاب والأساتذة والصلاحيات</string>
+        <string name="admin_projects_count_fmt">%1$s مشروع مسجّل</string>
+        <string name="admin_projects_subtitle">عرض ومراقبة جميع مشاريع الفصل الحالي</string>
+    <string name="search_hint">بحث…</string>
+    <string name="professor_label">المشرف</string>
+    <string name="progress_label">التقدم</string>
+    <string name="score_label">العلامة</string>
+
+    <!-- Extra: shared / lists -->
+    <string name="project_progress_fmt">التقدم: %1$d٪</string>
+    <string name="task_deadline_fmt">الموعد: %1$s</string>
+    <string name="task_assignee_fmt">المسؤول: %1$s</string>
+    <string name="report_task_fmt">المهمة: %1$s</string>
+    <string name="report_date_fmt">التاريخ: %1$s</string>
+    <string name="feedback_label">الملاحظة:</string>
+    <string name="status_update">تغيير الحالة</string>
+    <string name="pick_start_end">حدد تاريخي بداية ونهاية المشروع.</string>
+    <string name="set_dates">تحديد التواريخ</string>
+    <string name="date_invalid">يجب أن يكون تاريخ النهاية بعد تاريخ البداية.</string>
+    <string name="no_pending_topics">لا توجد مواضيع بانتظار المراجعة.</string>
+        <string name="pending_topics_subtitle_fmt">لديكم %1$s مواضيع بانتظار المراجعة</string>
+        <string name="team_name_fmt">فريق «%1$s»</string>
+        <string name="members_names_fmt">الأعضاء: %1$s</string>
+        <string name="date_range_label">تحديد الإطار الزمني للمشروع:</string>
+        <string name="expected_end_date">تاريخ الانتهاء المتوقع</string>
+        <string name="approved_range_fmt">الإطار المعتمد: %1$s إلى %2$s</string>
+        <string name="approved_active_running">نشط قيد التنفيذ</string>
+        <string name="approve_topic_full">اعتماد الموضوع وتحديد الإطار</string>
+        <string name="reject_topic_full">رفض الموضوع</string>
+        <string name="status_pending_approval">بانتظار الاعتماد</string>
+        <string name="status_approved_label">معتمد</string>
+    <string name="team_of_fmt">الفريق: %1$s</string>
+    <string name="members_count_fmt">%1$d عضو</string>
+    <string name="search_users">بحث في المستخدمين…</string>
+    <string name="search_projects">بحث في المشاريع…</string>
+    <string name="role_admin">مدير النظام</string>
+    
+        <!-- Admin users (modern) -->
+        <string name="admin_users_page_subtitle">مراجعة وتحرير وإدارة صلاحيات النظام</string>
+        <string name="add_user_btn">إضافة مستخدم</string>
+        <string name="search_users_hint">ابحث بالاسم أو البريد أو الرقم الدراسي...</string>
+        <string name="filter_all">الكل</string>
+        <string name="filter_students">طالب</string>
+        <string name="filter_advisors">مشرف</string>
+        <string name="filter_admins">مدير</string>
+        <string name="user_id_fmt">المعرّف: %1$d</string>
+        <string name="edit_user_title">تحرير</string>
+    <string name="elevation_hint">اضغط لعرض التفاصيل</string>
+
+    <!-- Language selector -->
+    <string name="language">اللغة</string>
+    <string name="lang_dialog_title">اختيار اللغة</string>
+    <string name="lang_fa">فارسی</string>
+    <string name="lang_ar">العربية</string>
+    <string name="lang_en">English</string>
+
+    <!-- Tasks screen (Stitch) -->
+    <string name="tasks_subtitle">إدارة ومتابعة المهام المسندة إلى أعضاء الفريق</string>
+    <string name="filters">عوامل التصفية</string>
+    <string name="overall_progress_pct">نسبة التقدم الكلية للمشروع</string>
+    <string name="percent_fmt">%1$s٪</string>
+    <string name="tasks_completed_of_fmt">تم إنجاز %1$s مهام من %2$s</string>
+    <string name="view_full_report">عرض التقرير الكامل</string>
+    <string name="assigned_to_fmt">مُسندة إلى: %1$s</string>
+    <string name="change_status_label">تغيير الحالة:</string>
+    <string name="no_tasks_yet">لم تُسجَّل أي مهمة بعد</string>
+    <string name="no_tasks_yet_body">لبدء المشروع، أسند مهامًا جديدة إلى أعضاء الفريق.</string>
+    <string name="add_first_task">أضف أول مهمة</string>
+
+    <!-- Admin projects (modern) -->
+    <string name="admin_projects_title">إدارة المشاريع</string>
+    <string name="new_project_btn">مشروع جديد</string>
+    <string name="search_projects_hint">ابحث بعنوان المشروع أو الفريق أو الأستاذ...</string>
+    <string name="filter_in_progress">قيد التنفيذ</string>
+    <string name="filter_needs_eval">بحاجة إلى تقييم</string>
+    <string name="filter_completed">مكتمل</string>
+    <string name="proj_team_fmt">فريق %1$s</string>
+    <string name="proj_professor_fmt">الأستاذ المشرف: %1$s</string>
+    <string name="proj_progress_label">تقدّم المشروع</string>
+    <string name="proj_final_score_label">العلامة النهائية:</string>
+    <string name="proj_no_score">— لا توجد علامة</string>
+    <string name="proj_awaiting_eval">في انتظار التقييم</string>
+    <string name="proj_details_manage">التفاصيل والإدارة</string>
+    <string name="proj_register_eval">تسجيل التقييم</string>
+
+    <!-- Appearance / day-night -->
+    <string name="appearance_title">وضع العرض</string>
+    <string name="theme_system">تبعا للنظام</string>
+    <string name="theme_light">نهاري (فاتح)</string>
+    <string name="theme_dark">ليلي (داكن)</string>
+
+    <!-- Server settings -->
+    <string name="server_settings_title">إعدادات الخادم</string>
+    <string name="server_current_fmt">الخادم الحالي: %1$s</string>
+    <string name="server_url_hint">https://…/api/ أو http://192.168.1.5:8000/api/</string>
+    <string name="server_save">حفظ واتصال</string>
+    <string name="server_reset_default">العودة إلى الافتراضي</string>
+    <string name="server_saved_toast">تم حفظ عنوان الخادم.</string>
+    <string name="server_invalid_url">عنوان غير صالح. يجب أن يبدأ بـ http:// أو https://.</string>
+
+    <!-- Admin CRUD (create / edit / delete users & projects) -->
+    <string name="delete">حذف</string>
+    <string name="confirm_delete_title">تأكيد الحذف</string>
+    <string name="confirm_delete_project_fmt">هل أنت متأكد من حذف المشروع «%1$s»؟ لا يمكن التراجع عن هذا الإجراء.</string>
+    <string name="confirm_delete_user_fmt">هل أنت متأكد من حذف المستخدم «%1$s»؟ لا يمكن التراجع عن هذا الإجراء.</string>
+    <string name="manage_project_title">إدارة المشروع</string>
+    <string name="create_project_title">إنشاء مشروع جديد</string>
+    <string name="label_project_desc">الوصف (اختياري)</string>
+    <string name="label_status">الحالة</string>
+    <string name="label_progress">نسبة التقدم</string>
+    <string name="action_saved_toast">تم الحفظ بنجاح.</string>
+    <string name="action_deleted_toast">تم الحذف.</string>
+    <string name="action_failed_toast">فشلت العملية.</string>
+    <string name="field_required_title">العنوان مطلوب.</string>
+    <string name="new_user_title">إنشاء مستخدم جديد</string>
+    <string name="edit_user_fmt">تعديل %1$s</string>
+    <string name="label_fullname_short">الاسم الكامل</string>
+    <string name="label_role">الدور</string>
+    <string name="password_optional_hint">كلمة المرور (اختياري عند التعديل)</string>
+    <string name="toggle_status_unavailable">هذا الحساب لا يملك حقل حالة نشط/غير نشط.</string>
+    <string name="edit">تعديل</string>
+    <string name="extend_deadline">تمديد المهلة</string>
+    <string name="extend_deadline_title">تمديد مهلة المشروع</string>
+    <string name="extend_deadline_hint">أدخل التاريخ الجديد (مثال 2026-12-31)</string>
+    <string name="deadline_extended_fmt">تم تمديد مهلة المشروع إلى %1$s</string>
+</resources>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/space_md"
+    android:background="@drawable/bg_project_card"
+    android:elevation="2dp"
+    android:orientation="vertical"
+    android:padding="@dimen/space_md">
+
+    <!-- Top row: status + title + team, and overflow menu -->
+    <LinearLayout
+        android:id="@+id/cardRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/statusChip"
+                style="@style/Text.LabelSm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chip_status_secondary_fixed"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:text="@string/filter_in_progress"
+                android:textColor="@color/on_secondary_fixed" />
+
+            <TextView
+                android:id="@+id/projectTitle"
+                style="@style/Text.HeadlineSm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_xs"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/teamLine"
+                style="@style/Text.BodySm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/on_surface_variant" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btnExtend"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/extend_deadline"
+            android:padding="8dp"
+            android:src="@drawable/ic_schedule"
+            app:tint="@color/primary" />
+
+        <ImageView
+            android:id="@+id/btnEditProject"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/edit"
+            android:padding="8dp"
+            android:src="@drawable/ic_edit"
+            app:tint="@color/on_surface_variant" />
+    </LinearLayout>
+
+    <!-- Professor tile -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_md"
+        android:background="@drawable/bg_professor_tile"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_sm">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginEnd="@dimen/space_xs"
+            android:contentDescription="@string/professor_label"
+            android:src="@drawable/ic_school"
+            app:tint="@color/primary" />
+
+        <TextView
+            android:id="@+id/professorName"
+            style="@style/Text.BodySm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/on_surface_variant" />
+    </LinearLayout>
+
+    <!-- Progress -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_md"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Text.LabelSm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/proj_progress_label"
+                android:textColor="@color/on_surface_variant" />
+
+            <TextView
+                android:id="@+id/progressPct"
+                style="@style/Text.LabelSm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/vazirmatn_bold"
+                android:textColor="@color/primary" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="@dimen/space_xs"
+            android:max="100"
+            android:progressDrawable="@drawable/progress_fill" />
+    </LinearLayout>
+
+    <!-- Footer: score / status text + action button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_md"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/footerText"
+            style="@style/Text.BodySm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/outline" />
+
+        <TextView
+            android:id="@+id/footerScore"
+            style="@style/Text.HeadlineSm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/vazirmatn_bold"
+            android:textColor="@color/primary"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/btnAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:background="@drawable/bg_action_secondary"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/space_md"
+            android:paddingVertical="10dp">
+
+            <ImageView
+                android:id="@+id/actionIcon"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginEnd="6dp"
+                android:contentDescription="@string/proj_details_manage"
+                android:src="@drawable/ic_visibility"
+                app:tint="@color/on_surface" />
+
+            <TextView
+                android:id="@+id/actionLabel"
+                style="@style/Text.LabelMd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/proj_details_manage"
+                android:textColor="@color/on_surface" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

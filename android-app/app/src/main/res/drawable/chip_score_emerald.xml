@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Score pill on the evaluation card (emerald-600, fully rounded). -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/emerald_600" />
+    <corners android:radius="999dp" />
+</shape>

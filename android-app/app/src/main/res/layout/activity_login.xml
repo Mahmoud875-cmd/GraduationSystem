@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/gutter"
+        android:paddingVertical="@dimen/space_lg">
+
+        <!-- Appearance / Language selectors -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_sm"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+        <!-- Language selector -->
+        <LinearLayout
+            android:id="@+id/langButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_sm"
+            android:background="@drawable/bg_input"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/space_md"
+            android:paddingVertical="@dimen/space_sm">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="@dimen/space_sm"
+                android:contentDescription="@string/language"
+                android:src="@drawable/ic_translate"
+                app:tint="@color/primary" />
+
+            <TextView
+                android:id="@+id/langLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/vazirmatn_medium"
+                android:text="@string/app_name"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/text_label_lg" />
+        </LinearLayout>
+
+        <!-- Appearance (day/night) selector -->
+        <LinearLayout
+            android:id="@+id/themeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/space_md"
+            android:paddingVertical="@dimen/space_sm">
+
+            <ImageView
+                android:id="@+id/themeIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="@dimen/space_sm"
+                android:contentDescription="@string/appearance_title"
+                android:src="@drawable/ic_dark_mode"
+                app:tint="@color/primary" />
+
+            <TextView
+                android:id="@+id/themeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/vazirmatn_medium"
+                android:text="@string/appearance_title"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/text_label_lg" />
+        </LinearLayout>
+        </LinearLayout>
+
+        <!-- Branding -->
+        <FrameLayout
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space_lg"
+            android:layout_marginBottom="@dimen/space_md"
+            android:background="@drawable/bg_circle_primary_container">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_school" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/vazirmatn_semibold"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/on_surface"
+            android:textSize="@dimen/text_headline_sm" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_xl"
+            android:fontFamily="@font/vazirmatn_regular"
+            android:gravity="center"
+            android:text="@string/app_subtitle"
+            android:textColor="@color/secondary"
+            android:textSize="@dimen/text_body_md" />
+
+        <!-- Login card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:elevation="3dp"
+            android:orientation="vertical"
+            android:padding="@dimen/space_lg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_lg"
+                android:fontFamily="@font/vazirmatn_bold"
+                android:text="@string/login_title"
+                android:textColor="@color/on_surface"
+                android:textSize="@dimen/text_headline_md" />
+
+            <!-- Email -->
+            <TextView
+                style="@style/Text.LabelMd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_xs"
+                android:text="@string/label_email" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_md"
+                android:background="@drawable/bg_input"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/space_sm">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="@dimen/space_sm"
+                    android:contentDescription="@string/label_email"
+                    android:src="@drawable/ic_mail"
+                    app:tint="@color/outline" />
+
+                <EditText
+                    android:id="@+id/inputEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/vazirmatn_regular"
+                    android:gravity="start|center_vertical"
+                    android:textDirection="ltr"
+                    android:hint="@string/hint_email"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="@dimen/min_touch"
+                    android:paddingHorizontal="@dimen/space_sm"
+                    android:textColor="@color/on_surface"
+                    android:textColorHint="@color/outline"
+                    android:textSize="@dimen/text_body_md" />
+            </LinearLayout>
+
+            <!-- Password -->
+            <TextView
+                style="@style/Text.LabelMd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_xs"
+                android:text="@string/label_password" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/space_sm">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="@dimen/space_sm"
+                    android:contentDescription="@string/label_password"
+                    android:src="@drawable/ic_lock"
+                    app:tint="@color/outline" />
+
+                <EditText
+                    android:id="@+id/inputPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:fontFamily="@font/vazirmatn_regular"
+                    android:textDirection="ltr"
+                    android:hint="\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022"
+                    android:inputType="textPassword"
+                    android:minHeight="@dimen/min_touch"
+                    android:paddingHorizontal="@dimen/space_sm"
+                    android:textColor="@color/on_surface"
+                    android:textColorHint="@color/outline"
+                    android:textSize="@dimen/text_body_md" />
+
+                <ImageView
+                    android:id="@+id/togglePassword"
+                    android:layout_width="@dimen/min_touch"
+                    android:layout_height="@dimen/min_touch"
+                    android:padding="12dp"
+                    android:contentDescription="@string/label_password"
+                    android:src="@drawable/ic_visibility"
+                    app:tint="@color/outline" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/forgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/space_sm"
+                android:fontFamily="@font/vazirmatn_medium"
+                android:text="@string/forgot_password"
+                android:textColor="@color/primary_container"
+                android:textSize="@dimen/text_label_md" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogin"
+                style="@style/Widget.App.Button.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_lg"
+                android:text="@string/login_action"
+                app:icon="@drawable/ic_arrow_forward"
+                app:iconGravity="textEnd" />
+        </LinearLayout>
+
+        <!-- Register link -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space_xl"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Text.BodyMuted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_account" />
+
+            <TextView
+                android:id="@+id/goRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_xs"
+                android:fontFamily="@font/vazirmatn_medium"
+                android:text="@string/register_link"
+                android:textColor="@color/primary_container"
+                android:textSize="@dimen/text_label_lg" />
+        </LinearLayout>
+
+        <!-- Server settings link -->
+        <TextView
+            android:id="@+id/btnServerSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space_md"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/vazirmatn_medium"
+            android:padding="@dimen/space_sm"
+            android:text="@string/server_settings_title"
+            android:textColor="@color/on_surface_variant"
+            android:textSize="@dimen/text_label_md" />
+    </LinearLayout>
+</ScrollView>

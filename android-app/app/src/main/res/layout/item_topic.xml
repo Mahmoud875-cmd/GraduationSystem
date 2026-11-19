@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/space_md"
+    android:background="@drawable/bg_card"
+    android:elevation="2dp"
+    android:orientation="vertical"
+    android:padding="@dimen/space_lg">
+
+    <!-- Status pill -->
+    <TextView
+        android:id="@+id/statusChip"
+        style="@style/ChipText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chip_amber"
+        android:textColor="@color/amber_800"
+        tools:text="در انتظار تأیید" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/topicTitle"
+        style="@style/Text.HeadlineSm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_sm"
+        android:fontFamily="@font/vazirmatn_bold"
+        android:text="-" />
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/topicDescription"
+        style="@style/Text.BodyMuted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_xs"
+        android:ellipsize="end"
+        android:maxLines="3" />
+
+    <!-- Team inner box -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_md"
+        android:background="@drawable/bg_input"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/space_md"
+        android:paddingVertical="@dimen/space_xs">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="@dimen/space_sm"
+            android:contentDescription="@string/team_members_label"
+            android:src="@drawable/ic_group"
+            app:tint="@color/primary" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/topicTeam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/vazirmatn_bold"
+                android:textColor="@color/on_surface"
+                android:textSize="@dimen/text_label_lg"
+                tools:text="تیم «هوش مصنوعی پیشرفته»" />
+
+            <TextView
+                android:id="@+id/topicMembers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/vazirmatn_regular"
+                android:textColor="@color/on_surface_variant"
+                android:textSize="@dimen/text_body_sm"
+                tools:text="اعضا: مهدی حسینی، زهرا کریمی" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Pending-only: inline date fields -->
+    <LinearLayout
+        android:id="@+id/dateSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_md"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/vazirmatn_medium"
+            android:text="@string/date_range_label"
+            android:textColor="@color/on_surface"
+            android:textSize="@dimen/text_label_md" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_sm"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/space_sm"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_xs"
+                    android:fontFamily="@font/vazirmatn_medium"
+                    android:text="@string/label_start_date"
+                    android:textColor="@color/on_surface_variant"
+                    android:textSize="@dimen/text_label_sm" />
+
+                <TextView
+                    android:id="@+id/startDateField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_date_line"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/vazirmatn_regular"
+                    android:minHeight="48dp"
+                    android:paddingHorizontal="@dimen/space_md"
+                    android:paddingVertical="@dimen/space_sm"
+                    android:textColor="@color/on_surface"
+                    android:textSize="@dimen/text_body_md"
+                    tools:text="۱۴۲/۰۹/۰۱" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_sm"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_xs"
+                    android:fontFamily="@font/vazirmatn_medium"
+                    android:text="@string/expected_end_date"
+                    android:textColor="@color/on_surface_variant"
+                    android:textSize="@dimen/text_label_sm" />
+
+                <TextView
+                    android:id="@+id/endDateField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_date_line"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/vazirmatn_regular"
+                    android:minHeight="48dp"
+                    android:paddingHorizontal="@dimen/space_md"
+                    android:paddingVertical="@dimen/space_sm"
+                    android:textColor="@color/on_surface"
+                    android:textSize="@dimen/text_body_md"
+                    tools:text="۱۴۳/۰/۱۵" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Pending-only: action buttons -->
+    <LinearLayout
+        android:id="@+id/actionsRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_md"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnReject"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_sm"
+            android:text="@string/reject_topic_full"
+            android:textColor="@color/error" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnApprove"
+            style="@style/Widget.App.Button.Primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/approve_topic_full" />
+    </LinearLayout>
+
+    <!-- Approved-only: bottom info row -->
+    <LinearLayout
+        android:id="@+id/approvedRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_md"
+        android:background="@drawable/divider_top_surface_container"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/space_sm"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/approvedRange"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/vazirmatn_regular"
+            android:textColor="@color/on_surface_variant"
+            android:textSize="@dimen/text_body_sm"
+            tools:text="بازه مصوب: ۱۴۲/۰/۰۱ الی ۱۴۰۳/۰۲/۰۱" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/space_xs"
+                android:fontFamily="@font/vazirmatn_medium"
+                android:text="@string/approved_active_running"
+                android:textColor="@color/emerald_600"
+                android:textSize="@dimen/text_body_sm" />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:contentDescription="@string/status_approved_label"
+                android:src="@drawable/ic_check_circle"
+                app:tint="@color/emerald_600" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

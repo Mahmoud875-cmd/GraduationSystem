@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graduation Management System - Stitch Screens Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .stitch-frame {
+            border: 8px solid #1a1a1a;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            background: #fff;
+            overflow: hidden;
+        }
+        .screen-title {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 min-h-screen">
+    <!-- Header -->
+    <header class="bg-black/40 backdrop-blur-xl border-b border-white/10 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h1 class="text-2xl font-bold text-white screen-title">
+                        Graduation Management System
+                    </h1>
+                    <p class="text-sm text-gray-300">Stitch Design Gallery • Class of 2025</p>
+                </div>
+                <div class="flex gap-3">
+                    <a href="/public/stitch-gallery.html#clearance" class="px-4 py-2 bg-white/10 hover:bg-white/20 text-white rounded-lg text-sm transition">
+                        Clearance
+                    </a>
+                    <a href="/public/stitch-gallery.html#dashboard" class="px-4 py-2 bg-white/10 hover:bg-white/20 text-white rounded-lg text-sm transition">
+                        Dashboard
+                    </a>
+                    <a href="/public/stitch-gallery.html#tickets" class="px-4 py-2 bg-white/10 hover:bg-white/20 text-white rounded-lg text-sm transition">
+                        Tickets
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <!-- Intro Card -->
+        <div class="mb-12 text-center">
+            <h2 class="text-4xl font-bold text-white mb-4 screen-title">📱 Mobile Screens Gallery</h2>
+            <p class="text-gray-300 max-w-2xl mx-auto">
+                Explore all 5 beautifully designed screens for the Graduation Management System. 
+                Each screen is optimized for mobile devices with elegant academic styling.
+            </p>
+        </div>
+
+        <!-- Screen Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Screen 1: Clearance Milestones -->
+            <div id="clearance" class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-white/20 transition">
+                <div class="mb-4">
+                    <span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs font-semibold mb-3">
+                        Screen 1
+                    </span>
+                    <h3 class="text-xl font-bold text-white mb-2 screen-title">Clearance Milestones</h3>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Track graduation requirements with progress indicators and completion status
+                    </p>
+                </div>
+                <div class="stitch-frame">
+                    <iframe 
+                        src="/public/screen_1_clearance_milestones.html" 
+                        class="w-full h-96 border-0"
+                        title="Clearance Milestones Screen">
+                    </iframe>
+                </div>
+                <div class="mt-4 flex gap-2">
+                    <a href="/public/screen_1_clearance_milestones.html" target="_blank" 
+                       class="flex-1 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-sm font-medium transition text-center">
+                        View Full Size ↗
+                    </a>
+                    <a href="/public/screen_1_clearance_milestones.png" download 
+                       class="px-4 py-2 bg-white/10 hover:bg-white/20 text-white rounded-lg text-sm font-medium transition">
+                        📥 PNG
+                    </a>
+                </div>
+            </div>
+
+            <!-- Screen 2: Student Dashboard -->
+            <div id="dashboard" class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-white/20 transition">
+                <div class="mb-4">
+                    <span class="inline-block px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs font-semibold mb-3">
+                        Screen 2
+                    </span>
+                    <h3 class="text-xl font-bold text-white mb-2 screen-title">Student Dashboard</h3>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Main hub with countdown timer, checklist, and quick access to all features
+                    </p>
+                </div>
+                <div class="stitch-frame">
+                    <iframe 
+                        src="/public/screen_2_student_dashboard.html" 
+                        class="w-full h-96 border-0"
+                        title="Student Dashboard Screen">
+                    </iframe>
+                </div>
+                <div class="mt-4 flex gap-2">
+                    <a href="/public/screen_2_student_dashboard.html" target="_blank" 
+                       class="flex-1 px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg text-sm font-medium transition text-center">
+                        View Full Size ↗
+                    </a>
+                    <a href="/public/screen_2_student_dashboard.png" download 
+                       class="px-4 py-2 bg-white/10 hover:bg-white/20 text-white rounded-lg text-sm font-medium transition">
+                        📥 PNG
+                    </a>
+                </div>
+            </div>
+
+            <!-- Screen 3: Guest Tickets & Seating -->
+            <div id="tickets" class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-white/20 transition">
+                <div class="mb-4">
+                    <span class="inline-block px-3 py-1 bg-orange-500/20 text-orange-300 rounded-full text-xs font-semibold mb-3">
+                        Screen 3
+                    </span>
+                    <h3 class="text-xl font-bold text-white mb-2 screen-title">Guest Tickets & Seating</h3>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Manage guest passes, view seating arrangements, and access venue maps
+                    </p>
+                </div>
+                <div class="stitch-frame">
+                    <iframe 
+                        src="/public/screen_3_guest_tickets_seating.html" 
+                        class="w-full h-96 border-0"
+                        title="Guest Tickets Screen">
+                    </iframe>
+                </div>
+                <div class="mt-4 flex gap-2">
+                    <a href="/public/screen_3_guest_tickets_seating.html" target="_blank" 
+                       class="flex-1 px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white rounded-lg text-sm font-medium transition text-center">
+                        View Full Size ↗
+                    </a>
+                    <a href="/public/screen_3_guest_tickets_seating.png" download 
+                       class="px-4 py-2 bg-white/10 hover:bg-white/20 text-white rounded-lg text-sm font-medium transition">
+                        📥 PNG
+                    </a>
+                </div>
+            </div>
+
+            <!-- Screen 4: Ceremony Schedule -->
+            <div id="schedule" class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-white/20 transition">
+                <div class="mb-4">
+                    <span class="inline-block px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-xs font-semibold mb-3">
+                        Screen 4
+                    </span>
+                    <h3 class="text-xl font-bold text-white mb-2 screen-title">Ceremony Schedule</h3>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Detailed timeline of graduation events with times and locations
+                    </p>
+                </div>
+                <div class="stitch-frame">
+                    <iframe 
+                        src="/public/screen_4_ceremony_schedule.html" 
+                        class="w-full h-96 border-0"
+                        title="Ceremony Schedule Screen">
+                    </iframe>
+                </div>
+                <div class="mt-4 flex gap-2">
+                    <a href="/public/screen_4_ceremony_schedule.html" target="_blank" 
+                       class="flex-1 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg text-sm font-medium transition text-center">
+                        View Full Size ↗
+                    </a>
+                    <a href="/public/screen_4_ceremony_schedule.png" download 
+                       class="px-4 py-2 bg-white/10 hover:bg-white/20 text-white rounded-lg text-sm font-medium transition">
+                        📥 PNG
+                    </a>
+                </div>
+            </div>
+
+            <!-- Screen 5: Regalia & Keepsakes -->
+            <div id="regalia" class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-white/20 transition">
+                <div class="mb-4">
+                    <span class="inline-block px-3 py-1 bg-yellow-500/20 text-yellow-300 rounded-full text-xs font-semibold mb-3">
+                        Screen 5
+                    </span>
+                    <h3 class="text-xl font-bold text-white mb-2 screen-title">Regalia & Keepsakes</h3>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Browse graduation attire options and collectible memorabilia
+                    </p>
+                </div>
+                <div class="stitch-frame">
+                    <iframe 
+                        src="/public/screen_5_regalia_keepsakes.html" 
+                        class="w-full h-96 border-0"
+                        title="Regalia & Keepsakes Screen">
+                    </iframe>
+                </div>
+                <div class="mt-4 flex gap-2">
+                    <a href="/public/screen_5_regalia_keepsakes.html" target="_blank" 
+                       class="flex-1 px-4 py-2 bg-yellow-600 hover:bg-yellow-700 text-white rounded-lg text-sm font-medium transition text-center">
+                        View Full Size ↗
+                    </a>
+                    <a href="/public/screen_5_regalia_keepsakes.png" download 
+                       class="px-4 py-2 bg-white/10 hover:bg-white/20 text-white rounded-lg text-sm font-medium transition">
+                        📥 PNG
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Stats Section -->
+        <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="bg-white/5 backdrop-blur-lg rounded-xl p-6 text-center border border-white/10">
+                <div class="text-3xl font-bold text-blue-400 mb-1">5</div>
+                <div class="text-gray-400 text-sm">Mobile Screens</div>
+            </div>
+            <div class="bg-white/5 backdrop-blur-lg rounded-xl p-6 text-center border border-white/10">
+                <div class="text-3xl font-bold text-purple-400 mb-1">780px</div>
+                <div class="text-gray-400 text-sm">Width (All)</div>
+            </div>
+            <div class="bg-white/5 backdrop-blur-lg rounded-xl p-6 text-center border border-white/10">
+                <div class="text-3xl font-bold text-orange-400 mb-1">10</div>
+                <div class="text-gray-400 text-sm">Files Exported</div>
+            </div>
+            <div class="bg-white/5 backdrop-blur-lg rounded-xl p-6 text-center border border-white/10">
+                <div class="text-3xl font-bold text-green-400 mb-1">2025</div>
+                <div class="text-gray-400 text-sm">Class Year</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black/40 backdrop-blur-xl border-t border-white/10 mt-16">
+        <div class="max-w-7xl mx-auto px-6 py-8 text-center">
+            <p class="text-gray-400 text-sm">
+                🎓 Graduation Management System • Built with Laravel + Tailwind CSS
+            </p>
+            <p class="text-gray-500 text-xs mt-2">
+                Stitch Project ID: 15374701786563527568
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

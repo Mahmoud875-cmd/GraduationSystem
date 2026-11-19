@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Empty-state card: white fill with a dashed outline border, matching Stitch. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/surface_container_lowest" />
+    <stroke
+        android:width="2dp"
+        android:color="@color/outline_variant"
+        android:dashWidth="8dp"
+        android:dashGap="5dp" />
+    <corners android:radius="12dp" />
+</shape>

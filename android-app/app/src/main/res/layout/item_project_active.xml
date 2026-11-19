@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/space_sm"
+    android:background="@drawable/bg_input"
+    android:elevation="1dp"
+    android:orientation="vertical"
+    android:padding="@dimen/space_lg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/projectTitle"
+            style="@style/Text.HeadlineSm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/statusChip"
+            style="@style/ChipText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chip_in_progress"
+            android:textColor="@color/status_in_progress_fg" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/groupName"
+        style="@style/Text.LabelMd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_xs" />
+
+    <!-- Progress row: label + percent, then bar (matches Stitch) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_md"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Text.BodyMuted"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/overall_progress"
+            android:textSize="@dimen/text_body_sm" />
+
+        <TextView
+            android:id="@+id/progressValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/vazirmatn_bold"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/text_body_sm"
+            tools:text="۶۵٪" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="@dimen/space_xs"
+        android:max="100"
+        android:progressDrawable="@drawable/progress_fill" />
+
+    <LinearLayout
+        android:id="@+id/actionsRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_md"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTasks"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_xs"
+            android:layout_weight="1"
+            android:background="@drawable/bg_action_gray"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:minHeight="40dp"
+            android:text="@string/tasks_title"
+            android:textColor="@color/on_surface"
+            app:icon="@drawable/ic_task"
+            app:iconGravity="textStart"
+            app:iconSize="16dp"
+            app:iconTint="@color/on_surface" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnReports"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space_xs"
+            android:layout_weight="1"
+            android:background="@drawable/bg_action_gray"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:minHeight="40dp"
+            android:text="@string/reports_title"
+            android:textColor="@color/on_surface"
+            app:icon="@drawable/ic_description"
+            app:iconGravity="textStart"
+            app:iconSize="16dp"
+            app:iconTint="@color/on_surface" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEvaluate"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_xs"
+            android:layout_weight="1"
+            android:background="@drawable/bg_action_primary_container"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:minHeight="40dp"
+            android:text="@string/evaluation_short"
+            android:textColor="@color/on_primary_container"
+            app:icon="@drawable/ic_grade"
+            app:iconGravity="textStart"
+            app:iconSize="16dp"
+            app:iconTint="@color/on_primary_container" />
+    </LinearLayout>
+</LinearLayout>

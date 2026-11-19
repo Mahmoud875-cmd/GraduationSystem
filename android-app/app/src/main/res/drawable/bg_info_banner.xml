@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Add-task auto-notify info banner: secondary-container @ ~60% (rounded 12dp). -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="#99D6E0F3" />
+    <corners android:radius="12dp" />
+</shape>
